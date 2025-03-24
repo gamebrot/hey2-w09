@@ -1,8 +1,7 @@
 # Honor Pad 9 Device Tree
 
-The Honor Pad 9 (Models or Codename: HEY2-W09)  
-
-Versions: Wi-Fi; 5G/Wi-Fi  
+The Honor Pad 9 (Models or Codename: HEY2-W09)
+Versions: Wi-Fi - 5G/LTE 
 Also known as Honor Tablet 9
 
 ## 📌 Device Overview  
