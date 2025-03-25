@@ -1,0 +1,24 @@
+# SPDX-License-Identifier: GPL-2.0
+
+# Selected when system need scm
+config HONOR_SCM
+	tristate "Smart Cache Manager support"
+	default n
+	help
+	  Manage memory cache smarter with appropriate strategy.
+
+config HONOR_SCM_BUILDIN
+	bool "smart cache manager support"
+	default n
+	help
+	  Say Y here if you want to use the scm.
+	  If unsure, say N here.
+
+config HONOR_SCM_DEBUG
+	bool "smart cache manager debug"
+	default n
+	help
+	  Say Y here if you want to use the scm debug.
+	  If unsure, say N here.
+
+

@@ -1,0 +1,36 @@
+# SPDX-License-Identifier: GPL-2.0-only
+#
+# MMC subsystem configuration
+#
+
+menuconfig MMC
+	tristate "MMC/SD/SDIO card support"
+	depends on HAS_IOMEM
+	help
+	  This selects MultiMediaCard, Secure Digital and Secure
+	  Digital I/O support.
+
+	  If you want MMC/SD/SDIO support, you should say Y here and
+	  also to your specific host controller driver.
+
+if MMC
+
+config HONOR_EMMC_VENDOR_MODE
+	bool "mmc driver fetures support of HONOR"
+	depends on MMC != n
+	default y
+	help
+	  This selects the mmc driver fetures support of HONOR
+
+config HONOR_SDCARD_DSM
+	bool "Listen sdcard kernel err"
+	depends on HONOR_EMMC_VENDOR_MODE != n
+	default n
+	help
+	  use honor sdcard log radar
+
+source "drivers/mmc/core/Kconfig"
+
+source "drivers/mmc/host/Kconfig"
+
+endif # MMC

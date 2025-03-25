@@ -1,0 +1,15 @@
+config HN_MICRODUMP
+	tristate "micro dump."
+	depends on !KASAN
+	default n
+
+config HN_MICRODUMP_GKI
+	bool "micro dump for gki"
+	depends on HN_MICRODUMP
+	default n
+
+config HN_MICRODUMP_DEFAULT_ENABLE
+	bool "microdump default enable."
+	default n
+
+source "drivers/micro_dump/test/Kconfig"

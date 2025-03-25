@@ -1,0 +1,5727 @@
+[abi_symbol_list]
+# commonly used symbols
+  add_cpu
+  add_timer
+  add_uevent_var
+  alloc_chrdev_region
+  __alloc_disk_node
+  __alloc_pages_nodemask
+  __alloc_percpu
+  __alloc_skb
+  alloc_workqueue
+  amba_bustype
+  amba_driver_register
+  amba_driver_unregister
+  android_rvh_probe_register
+  anon_inode_getfile
+  __arch_copy_from_user
+  __arch_copy_to_user
+  arch_timer_read_counter
+  arm64_const_caps_ready
+  arm64_use_ng_mappings
+  atomic_notifier_call_chain
+  atomic_notifier_chain_register
+  atomic_notifier_chain_unregister
+  bcmp
+  __bitmap_clear
+  bitmap_find_next_zero_area_off
+  bitmap_print_to_pagebuf
+  __bitmap_set
+  blocking_notifier_call_chain
+  blocking_notifier_chain_register
+  blocking_notifier_chain_unregister
+  bpf_trace_run10
+  bpf_trace_run12
+  bpf_trace_run1
+  bpf_trace_run2
+  bpf_trace_run3
+  bpf_trace_run4
+  bpf_trace_run5
+  bpf_trace_run6
+  bpf_trace_run7
+  bpf_trace_run8
+  bpf_trace_run9
+  bus_find_device
+  bus_for_each_dev
+  bus_register
+  bus_unregister
+  cancel_delayed_work
+  cancel_delayed_work_sync
+  cancel_work_sync
+  capable
+  cdev_add
+  cdev_alloc
+  cdev_del
+  cdev_device_add
+  cdev_device_del
+  cdev_init
+  cgroup_taskset_first
+  cgroup_taskset_next
+  __check_object_size
+  __class_create
+  class_destroy
+  __class_register
+  class_unregister
+  cleanup_srcu_struct
+  clk_bulk_disable
+  clk_bulk_enable
+  clk_bulk_prepare
+  clk_bulk_unprepare
+  clk_disable
+  clk_enable
+  clk_get
+  clk_get_rate
+  clk_hw_get_name
+  clk_hw_is_prepared
+  __clk_is_enabled
+  clk_prepare
+  clk_put
+  clk_round_rate
+  clk_set_parent
+  clk_set_rate
+  clk_unprepare
+  cma_alloc
+  cma_release
+  compat_alloc_user_space
+  compat_ptr_ioctl
+  complete
+  complete_all
+  completion_done
+  config_ep_by_speed
+  config_group_init_type_name
+  __const_udelay
+  consume_skb
+  contig_page_data
+  __cpu_active_mask
+  cpufreq_cpu_get
+  cpufreq_cpu_get_raw
+  cpufreq_cpu_put
+  cpufreq_register_notifier
+  __cpuhp_remove_state
+  __cpuhp_setup_state
+  __cpuhp_setup_state_cpuslocked
+  cpu_hwcap_keys
+  cpu_hwcaps
+  cpu_latency_qos_add_request
+  cpu_latency_qos_remove_request
+  cpu_latency_qos_request_active
+  cpu_latency_qos_update_request
+  cpumask_next
+  cpumask_next_and
+  cpu_number
+  __cpu_online_mask
+  cpu_pm_register_notifier
+  cpu_pm_unregister_notifier
+  __cpu_possible_mask
+  __cpu_present_mask
+  cpu_scale
+  cpus_read_lock
+  cpus_read_unlock
+  cpu_subsys
+  crc32_le
+  crypto_alloc_shash
+  crypto_destroy_tfm
+  crypto_register_alg
+  crypto_register_scomp
+  crypto_shash_final
+  crypto_shash_update
+  crypto_unregister_alg
+  crypto_unregister_scomp
+  css_next_child
+  _ctype
+  debugfs_attr_read
+  debugfs_attr_write
+  debugfs_create_bool
+  debugfs_create_dir
+  debugfs_create_file
+  debugfs_create_file_unsafe
+  debugfs_create_u32
+  debugfs_file_get
+  debugfs_file_put
+  debugfs_lookup
+  debugfs_remove
+  default_llseek
+  delayed_work_timer_fn
+  del_timer
+  del_timer_sync
+  destroy_workqueue
+  dev_driver_string
+  _dev_err
+  dev_err_probe
+  dev_fwnode
+  dev_get_regmap
+  device_add
+  device_create
+  device_create_file
+  device_del
+  device_destroy
+  device_for_each_child
+  device_get_match_data
+  device_initialize
+  device_init_wakeup
+  device_link_add
+  device_match_fwnode
+  device_register
+  device_remove_file
+  device_unregister
+  _dev_info
+  devm_blk_ksm_init
+  devm_clk_bulk_get_all
+  devm_clk_get
+  devm_clk_hw_register
+  devm_clk_register
+  devm_extcon_dev_allocate
+  devm_extcon_dev_register
+  devm_free_irq
+  devm_gpiod_get_optional
+  devm_gpio_free
+  devm_gpio_request
+  devm_gpio_request_one
+  devm_iio_channel_get
+  devm_input_allocate_device
+  devm_ioremap
+  devm_ioremap_resource
+  devm_ioremap_wc
+  devm_iounmap
+  devm_kasprintf
+  devm_kfree
+  devm_kmalloc
+  devm_kmemdup
+  devm_kstrdup
+  devm_led_classdev_register_ext
+  devm_nvmem_device_get
+  devm_nvmem_register
+  devm_of_clk_add_hw_provider
+  devm_of_platform_populate
+  devm_pinctrl_get
+  devm_pinctrl_put
+  devm_pinctrl_register
+  devm_platform_ioremap_resource
+  devm_power_supply_register
+  devm_regmap_field_alloc
+  __devm_regmap_init_i2c
+  __devm_regmap_init_mmio_clk
+  devm_regulator_get
+  devm_regulator_get_optional
+  devm_regulator_register
+  __devm_request_region
+  devm_request_threaded_irq
+  __devm_reset_control_get
+  devm_reset_controller_register
+  devm_thermal_of_cooling_device_register
+  devm_thermal_zone_of_sensor_register
+  _dev_notice
+  dev_pm_genpd_add_notifier
+  dev_pm_genpd_set_performance_state
+  dev_pm_opp_add
+  dev_pm_opp_find_freq_floor
+  dev_pm_opp_get_opp_count
+  dev_pm_opp_put
+  dev_pm_qos_add_notifier
+  dev_pm_qos_add_request
+  dev_pm_qos_remove_notifier
+  dev_pm_qos_remove_request
+  dev_pm_qos_update_request
+  devres_add
+  devres_alloc_node
+  devres_free
+  devres_release
+  dev_set_name
+  _dev_warn
+  disable_irq
+  disable_irq_nosync
+  dma_alloc_attrs
+  dma_async_device_register
+  dma_async_device_unregister
+  dma_async_tx_descriptor_init
+  dma_buf_attach
+  dma_buf_begin_cpu_access
+  dma_buf_detach
+  dma_buf_end_cpu_access
+  dma_buf_fd
+  dma_buf_get
+  dma_buf_map_attachment
+  dma_buf_put
+  dma_buf_unmap_attachment
+  dma_fence_add_callback
+  dma_fence_array_create
+  dma_fence_array_ops
+  dma_fence_context_alloc
+  dma_fence_default_wait
+  dma_fence_init
+  dma_fence_release
+  dma_fence_remove_callback
+  dma_fence_signal
+  dma_fence_signal_locked
+  dma_fence_wait_timeout
+  dma_free_attrs
+  dma_get_sgtable_attrs
+  dma_get_slave_channel
+  dma_heap_buffer_alloc
+  dma_heap_find
+  dmam_alloc_attrs
+  dma_map_page_attrs
+  dma_map_resource
+  dma_map_sg_attrs
+  dma_release_channel
+  dma_request_chan
+  dma_set_coherent_mask
+  dma_set_mask
+  dma_sync_sg_for_cpu
+  dma_sync_sg_for_device
+  dma_sync_single_for_cpu
+  dma_sync_single_for_device
+  dma_unmap_page_attrs
+  dma_unmap_resource
+  dma_unmap_sg_attrs
+  down
+  down_interruptible
+  down_read
+  down_write
+  dput
+  driver_register
+  driver_unregister
+  enable_irq
+  eventfd_ctx_fileget
+  eventfd_signal
+  event_triggers_call
+  extcon_get_property
+  extcon_get_state
+  extcon_set_property
+  extcon_set_property_capability
+  extcon_set_state_sync
+  __fdget
+  fd_install
+  fget
+  find_last_bit
+  find_next_bit
+  find_next_zero_bit
+  find_task_by_vpid
+  find_vma
+  find_vpid
+  finish_wait
+  firmware_request_nowarn
+  flush_delayed_work
+  flush_work
+  flush_workqueue
+  fput
+  free_irq
+  __free_pages
+  free_pages
+  free_percpu
+  freezing_slow_path
+  freq_qos_add_request
+  freq_qos_remove_request
+  freq_qos_update_request
+  fwnode_handle_put
+  fwnode_property_present
+  fwnode_property_read_u32_array
+  fwnode_usb_role_switch_get
+  generic_file_llseek
+  generic_handle_irq
+  generic_iommu_put_resv_regions
+  genlmsg_put
+  genl_register_family
+  genl_unregister_family
+  gen_pool_add_owner
+  gen_pool_alloc_algo_owner
+  gen_pool_create
+  gen_pool_destroy
+  gen_pool_free_owner
+  gen_pool_set_algo
+  gen_pool_virt_to_phys
+  get_cpu_device
+  get_cpu_idle_time_us
+  get_cpu_iowait_time_us
+  get_device
+  __get_free_pages
+  get_pid_task
+  get_random_bytes
+  __get_task_comm
+  get_task_mm
+  get_unused_fd_flags
+  gic_nonsecure_priorities
+  gpiochip_add_data_with_key
+  gpiochip_add_pin_range
+  gpiochip_generic_free
+  gpiochip_generic_request
+  gpiochip_get_data
+  gpiochip_remove
+  gpiod_direction_input
+  gpiod_direction_output_raw
+  gpiod_get_raw_value
+  gpiod_get_raw_value_cansleep
+  gpiod_set_raw_value
+  gpiod_set_raw_value_cansleep
+  gpiod_set_value_cansleep
+  gpiod_to_irq
+  gpio_free
+  gpio_request
+  gpio_request_one
+  gpio_to_desc
+  handle_edge_irq
+  handle_level_irq
+  handle_nested_irq
+  handle_sysrq
+  hrtimer_active
+  hrtimer_cancel
+  __hrtimer_get_remaining
+  hrtimer_init
+  hrtimer_start_range_ns
+  hrtimer_try_to_cancel
+  hwspin_lock_request_specific
+  i2c_del_driver
+  i2c_register_driver
+  i2c_smbus_read_byte_data
+  i2c_smbus_read_i2c_block_data
+  i2c_smbus_write_byte_data
+  i2c_smbus_write_i2c_block_data
+  i2c_transfer
+  i2c_transfer_buffer_flags
+  icc_put
+  icc_set_bw
+  icc_set_tag
+  ida_alloc_range
+  ida_free
+  idr_alloc
+  idr_alloc_cyclic
+  idr_destroy
+  idr_find
+  idr_for_each
+  idr_get_next
+  idr_preload
+  idr_remove
+  iio_channel_get
+  iio_read_channel_processed
+  in_egroup_p
+  init_net
+  __init_rwsem
+  __init_swait_queue_head
+  init_task
+  init_timer_key
+  init_uts_ns
+  init_wait_entry
+  __init_waitqueue_head
+  input_allocate_device
+  input_close_device
+  input_event
+  input_free_device
+  input_mt_init_slots
+  input_mt_report_slot_state
+  input_open_device
+  input_register_device
+  input_register_handle
+  input_register_handler
+  input_set_abs_params
+  input_set_capability
+  input_unregister_device
+  input_unregister_handle
+  iomem_resource
+  iommu_alloc_resv_region
+  iommu_attach_device
+  iommu_detach_device
+  iommu_domain_alloc
+  iommu_domain_free
+  iommu_domain_get_attr
+  iommu_get_domain_for_dev
+  iommu_group_get
+  iommu_group_put
+  iommu_map
+  iommu_map_sg
+  iommu_put_dma_cookie
+  iommu_set_fault_handler
+  iommu_unmap
+  __ioremap
+  ioremap_cache
+  iounmap
+  __iowrite32_copy
+  irq_chip_disable_parent
+  irq_chip_enable_parent
+  irq_chip_eoi_parent
+  irq_chip_mask_parent
+  irq_chip_set_affinity_parent
+  irq_chip_set_parent_state
+  irq_chip_set_type_parent
+  irq_chip_set_vcpu_affinity_parent
+  irq_chip_set_wake_parent
+  irq_chip_unmask_parent
+  irq_dispose_mapping
+  __irq_domain_add
+  irq_domain_free_irqs_common
+  irq_domain_get_irq_data
+  irq_domain_remove
+  irq_domain_set_info
+  irq_find_mapping
+  irq_find_matching_fwspec
+  irq_get_irq_data
+  irq_modify_status
+  irq_of_parse_and_map
+  irq_set_affinity_hint
+  irq_set_chained_handler_and_data
+  irq_set_chip_and_handler_name
+  irq_set_chip_data
+  irq_set_irq_wake
+  irq_to_desc
+  irq_work_queue
+  is_dma_buf_file
+  is_vmalloc_addr
+  iterate_fd
+  jiffies
+  jiffies_to_msecs
+  jiffies_to_usecs
+  kasprintf
+  kernel_connect
+  kernel_cpustat
+  kernel_getsockname
+  kernel_kobj
+  kernel_power_off
+  kernel_recvmsg
+  kernel_sendmsg
+  __kfifo_alloc
+  __kfifo_free
+  __kfifo_in
+  __kfifo_out
+  kfree
+  kfree_const
+  kfree_sensitive
+  kfree_skb
+  kimage_voffset
+  __kmalloc
+  kmalloc_caches
+  kmalloc_order_trace
+  kmem_cache_alloc
+  kmem_cache_alloc_trace
+  kmem_cache_create
+  kmem_cache_destroy
+  kmem_cache_free
+  kmemdup
+  kmsg_dump_get_buffer
+  kmsg_dump_rewind
+  kobject_add
+  kobject_create_and_add
+  kobject_del
+  kobject_init
+  kobject_init_and_add
+  kobject_put
+  kobject_uevent
+  kobject_uevent_env
+  kobj_sysfs_ops
+  kstrdup
+  kstrdup_const
+  kstrndup
+  kstrtobool
+  kstrtoint
+  kstrtoll
+  kstrtou16
+  kstrtou8
+  kstrtou8_from_user
+  kstrtouint
+  kstrtouint_from_user
+  kstrtoul_from_user
+  kstrtoull
+  kstrtoull_from_user
+  kthread_bind_mask
+  kthread_cancel_work_sync
+  kthread_create_on_node
+  kthread_flush_worker
+  __kthread_init_worker
+  kthread_queue_work
+  kthread_should_stop
+  kthread_stop
+  kthread_worker_fn
+  ktime_get
+  ktime_get_coarse_real_ts64
+  ktime_get_coarse_with_offset
+  ktime_get_mono_fast_ns
+  ktime_get_real_ts64
+  ktime_get_ts64
+  ktime_get_with_offset
+  kvfree
+  kvmalloc_node
+  __list_add_valid
+  __list_del_entry_valid
+  log_buf_addr_get
+  log_buf_len_get
+  __log_post_read_mmio
+  __log_read_mmio
+  __log_write_mmio
+  loops_per_jiffy
+  lzo1x_decompress_safe
+  match_string
+  mbox_chan_received_data
+  mbox_client_txdone
+  mbox_controller_register
+  mbox_controller_unregister
+  mbox_free_channel
+  mbox_request_channel
+  mbox_send_message
+  memchr
+  memcmp
+  memcpy
+  __memcpy_fromio
+  __memcpy_toio
+  memmove
+  memory_read_from_buffer
+  memparse
+  mempool_alloc
+  mempool_create
+  mempool_destroy
+  mempool_free
+  memremap
+  memset
+  __memset_io
+  memstart_addr
+  memunmap
+  misc_deregister
+  misc_register
+  mmput
+  mod_delayed_work_on
+  mod_node_page_state
+  mod_timer
+  module_layout
+  module_put
+  __msecs_to_jiffies
+  msleep
+  msleep_interruptible
+  __mutex_init
+  mutex_is_locked
+  mutex_lock
+  mutex_lock_interruptible
+  mutex_trylock
+  mutex_unlock
+  __ndelay
+  netlink_broadcast
+  __netlink_kernel_create
+  netlink_unicast
+  nla_find
+  nla_put
+  nla_reserve
+  __nla_validate
+  __nlmsg_put
+  no_llseek
+  nonseekable_open
+  noop_llseek
+  nr_cpu_ids
+  ns_to_timespec64
+  __num_online_cpus
+  nvmem_cell_get
+  nvmem_cell_put
+  nvmem_cell_read
+  nvmem_device_read
+  nvmem_device_write
+  of_address_to_resource
+  of_alias_get_id
+  of_clk_del_provider
+  of_count_phandle_with_args
+  of_cpu_node_to_id
+  of_device_get_match_data
+  of_device_is_available
+  of_device_is_compatible
+  of_dma_configure_id
+  of_dma_controller_free
+  of_dma_controller_register
+  of_drm_find_panel
+  of_find_compatible_node
+  of_find_device_by_node
+  of_find_node_by_name
+  of_find_node_by_phandle
+  of_find_node_opts_by_path
+  of_find_node_with_property
+  of_find_property
+  of_fwnode_ops
+  of_genpd_add_provider_onecell
+  of_genpd_del_provider
+  of_get_address
+  of_get_child_by_name
+  of_get_cpu_node
+  of_get_named_gpio_flags
+  of_get_next_available_child
+  of_get_next_child
+  of_get_parent
+  of_get_property
+  of_get_regulator_init_data
+  of_icc_get
+  of_iomap
+  of_irq_find_parent
+  of_irq_get
+  of_irq_get_byname
+  of_match_device
+  of_match_node
+  of_n_addr_cells
+  of_node_name_eq
+  of_n_size_cells
+  of_parse_phandle
+  of_parse_phandle_with_args
+  of_parse_phandle_with_fixed_args
+  of_phandle_iterator_init
+  of_phandle_iterator_next
+  of_platform_depopulate
+  of_platform_device_create
+  of_platform_populate
+  of_property_count_elems_of_size
+  of_property_match_string
+  of_property_read_string
+  of_property_read_string_helper
+  of_property_read_u32_index
+  of_property_read_variable_u16_array
+  of_property_read_variable_u32_array
+  of_property_read_variable_u8_array
+  of_prop_next_string
+  of_prop_next_u32
+  of_reserved_mem_device_init_by_idx
+  of_reserved_mem_device_release
+  of_reserved_mem_lookup
+  of_translate_address
+  oops_in_progress
+  overflowuid
+  panic
+  panic_notifier_list
+  param_get_int
+  param_ops_bool
+  param_ops_int
+  param_ops_string
+  param_ops_uint
+  param_set_bool
+  pci_bus_type
+  PDE_DATA
+  __per_cpu_offset
+  perf_aux_output_flag
+  perf_get_aux
+  perf_trace_buf_alloc
+  perf_trace_run_bpf_submit
+  pfn_valid
+  pid_task
+  pinconf_generic_dt_node_to_map
+  pinctrl_dev_get_drvdata
+  pinctrl_lookup_state
+  pinctrl_select_state
+  pinctrl_utils_free_map
+  platform_bus_type
+  platform_device_add
+  platform_device_alloc
+  platform_device_del
+  platform_device_put
+  platform_device_register
+  platform_device_register_full
+  platform_device_unregister
+  __platform_driver_register
+  platform_driver_unregister
+  platform_get_irq
+  platform_get_irq_byname
+  platform_get_resource
+  platform_get_resource_byname
+  pm_genpd_init
+  __pm_relax
+  pm_relax
+  pm_runtime_allow
+  pm_runtime_barrier
+  __pm_runtime_disable
+  pm_runtime_enable
+  pm_runtime_forbid
+  pm_runtime_force_resume
+  pm_runtime_force_suspend
+  __pm_runtime_idle
+  pm_runtime_no_callbacks
+  __pm_runtime_resume
+  pm_runtime_set_autosuspend_delay
+  __pm_runtime_set_status
+  __pm_runtime_suspend
+  __pm_runtime_use_autosuspend
+  __pm_stay_awake
+  pm_stay_awake
+  pm_wakeup_dev_event
+  pm_wakeup_ws_event
+  power_supply_changed
+  power_supply_get_by_name
+  power_supply_get_drvdata
+  power_supply_get_property
+  power_supply_put
+  power_supply_register
+  power_supply_reg_notifier
+  power_supply_set_property
+  power_supply_unregister
+  power_supply_unreg_notifier
+  preempt_schedule
+  preempt_schedule_notrace
+  prepare_to_wait_event
+  print_hex_dump
+  printk
+  proc_create
+  proc_create_data
+  proc_dointvec
+  proc_dointvec_minmax
+  proc_mkdir
+  proc_remove
+  __pskb_pull_tail
+  put_device
+  put_disk
+  __put_page
+  __put_task_struct
+  put_unused_fd
+  qcom_smem_state_get
+  qcom_smem_state_update_bits
+  queue_delayed_work_on
+  queue_work_on
+  ___ratelimit
+  raw_notifier_call_chain
+  raw_notifier_chain_register
+  raw_notifier_chain_unregister
+  _raw_read_lock
+  _raw_read_lock_bh
+  _raw_read_lock_irq
+  _raw_read_lock_irqsave
+  _raw_read_unlock
+  _raw_read_unlock_bh
+  _raw_read_unlock_irq
+  _raw_read_unlock_irqrestore
+  _raw_spin_lock
+  _raw_spin_lock_bh
+  _raw_spin_lock_irq
+  _raw_spin_lock_irqsave
+  _raw_spin_trylock
+  _raw_spin_unlock
+  _raw_spin_unlock_bh
+  _raw_spin_unlock_irq
+  _raw_spin_unlock_irqrestore
+  _raw_write_lock
+  _raw_write_lock_bh
+  _raw_write_lock_irq
+  _raw_write_lock_irqsave
+  _raw_write_unlock
+  _raw_write_unlock_bh
+  _raw_write_unlock_irq
+  _raw_write_unlock_irqrestore
+  rb_erase
+  rb_first
+  rb_insert_color
+  rb_next
+  __rcu_read_lock
+  __rcu_read_unlock
+  rdev_get_drvdata
+  reboot_mode
+  refcount_warn_saturate
+  __refrigerator
+  __register_chrdev
+  register_kretprobe
+  register_pm_notifier
+  register_reboot_notifier
+  register_restart_handler
+  __register_rpmsg_driver
+  register_shrinker
+  register_syscore_ops
+  register_sysctl_table
+  regmap_bulk_read
+  regmap_bulk_write
+  regmap_field_read
+  regmap_field_update_bits_base
+  regmap_read
+  regmap_update_bits_base
+  regmap_write
+  regulator_count_voltages
+  regulator_disable
+  regulator_disable_regmap
+  regulator_enable
+  regulator_enable_regmap
+  regulator_get
+  regulator_get_voltage
+  regulator_get_voltage_sel_regmap
+  regulator_is_enabled
+  regulator_is_enabled_regmap
+  regulator_list_voltage_linear
+  regulator_map_voltage_linear
+  regulator_notifier_call_chain
+  regulator_put
+  regulator_register_notifier
+  regulator_set_load
+  regulator_set_mode
+  regulator_set_voltage
+  regulator_set_voltage_sel_regmap
+  regulator_unregister_notifier
+  release_firmware
+  remap_pfn_range
+  remap_vmalloc_range
+  remove_cpu
+  remove_proc_entry
+  request_firmware
+  request_firmware_nowait
+  request_threaded_irq
+  reset_control_assert
+  reset_control_deassert
+  rfkill_alloc
+  rfkill_destroy
+  rfkill_register
+  rfkill_unregister
+  root_task_group
+  rpmsg_register_device
+  rpmsg_send
+  rpmsg_trysend
+  rpmsg_unregister_device
+  rproc_add
+  rproc_add_subdev
+  rproc_alloc
+  rproc_boot
+  rproc_coredump_add_segment
+  rproc_coredump_cleanup
+  rproc_coredump_set_elf_info
+  rproc_del
+  rproc_free
+  rproc_get_by_phandle
+  rproc_remove_subdev
+  rproc_report_crash
+  rproc_shutdown
+  rtc_time64_to_tm
+  rtc_tm_to_time64
+  rtnl_lock
+  rtnl_unlock
+  runqueues
+  sched_clock
+  sched_set_normal
+  sched_setscheduler
+  sched_setscheduler_nocheck
+  sched_show_task
+  schedule
+  schedule_timeout
+  scmi_driver_register
+  scmi_driver_unregister
+  scmi_protocol_register
+  scmi_protocol_unregister
+  scnprintf
+  scsi_command_size_tbl
+  send_sig_info
+  seq_lseek
+  seq_open
+  seq_printf
+  seq_putc
+  seq_puts
+  seq_read
+  seq_release
+  seq_write
+  set_cpus_allowed_ptr
+  set_freezable
+  set_normalized_timespec64
+  set_user_nice
+  sg_alloc_table
+  sg_alloc_table_from_pages
+  sg_free_table
+  sg_init_one
+  sg_init_table
+  sg_next
+  __sg_page_iter_next
+  __sg_page_iter_start
+  si_mem_available
+  si_meminfo
+  simple_attr_open
+  simple_attr_read
+  simple_attr_release
+  simple_attr_write
+  simple_open
+  simple_read_from_buffer
+  single_open
+  single_release
+  si_swapinfo
+  skb_add_rx_frag
+  skb_copy_bits
+  skb_dequeue
+  skb_pull
+  skb_push
+  skb_put
+  skb_queue_purge
+  skb_queue_tail
+  skb_trim
+  skip_spaces
+  smp_call_function_single
+  snprintf
+  __sock_create
+  sock_create_kern
+  sock_release
+  sort
+  __spi_register_driver
+  spi_setup
+  spi_sync
+  spmi_controller_add
+  spmi_controller_alloc
+  spmi_controller_remove
+  sprintf
+  srcu_init_notifier_head
+  srcu_notifier_call_chain
+  srcu_notifier_chain_register
+  srcu_notifier_chain_unregister
+  sscanf
+  __stack_chk_fail
+  __stack_chk_guard
+  stack_trace_save_tsk
+  strcasecmp
+  strcat
+  strchr
+  strcmp
+  strcpy
+  strim
+  strlcat
+  strlcpy
+  strlen
+  strncasecmp
+  strncat
+  strnchr
+  strncmp
+  strncpy
+  strnlen
+  strnstr
+  strpbrk
+  strrchr
+  strscpy
+  strsep
+  strstr
+  __sw_hweight32
+  __sw_hweight64
+  __sw_hweight8
+  synchronize_rcu
+  syscon_node_to_regmap
+  syscon_regmap_lookup_by_phandle
+  sysctl_vals
+  sysfs_create_bin_file
+  sysfs_create_file_ns
+  sysfs_create_files
+  sysfs_create_group
+  sysfs_create_link
+  sysfs_emit
+  sysfs_notify
+  sysfs_remove_bin_file
+  sysfs_remove_file_ns
+  sysfs_remove_files
+  sysfs_remove_group
+  sysfs_remove_link
+  sysfs_streq
+  sysrq_mask
+  system_freezable_wq
+  system_freezing_cnt
+  system_highpri_wq
+  system_power_efficient_wq
+  system_state
+  system_unbound_wq
+  system_wq
+  sys_tz
+  tasklet_init
+  tasklet_kill
+  __tasklet_schedule
+  tasklist_lock
+  __task_pid_nr_ns
+  task_sched_runtime
+  thermal_cooling_device_register
+  thermal_cooling_device_unregister
+  thermal_of_cooling_device_register
+  thermal_zone_device_enable
+  thermal_zone_device_register
+  thermal_zone_device_unregister
+  thermal_zone_device_update
+  thermal_zone_get_temp
+  thermal_zone_get_zone_by_name
+  thermal_zone_of_sensor_register
+  thermal_zone_of_sensor_unregister
+  _totalram_pages
+  total_swapcache_pages
+  trace_event_buffer_commit
+  trace_event_buffer_reserve
+  trace_event_ignore_this_pid
+  trace_event_raw_init
+  trace_event_reg
+  trace_handle_return
+  __traceiter_android_rvh_cpu_cgroup_attach
+  __traceiter_android_rvh_cpu_cgroup_online
+  __traceiter_android_rvh_do_sched_yield
+  __traceiter_android_rvh_flush_task
+  __traceiter_android_rvh_new_task_stats
+  __traceiter_android_rvh_try_to_wake_up
+  __traceiter_android_rvh_wake_up_new_task
+  __traceiter_android_vh_check_uninterruptible_tasks
+  __traceiter_android_vh_check_uninterruptible_tasks_dn
+  __traceiter_android_vh_cpu_idle_enter
+  __traceiter_android_vh_cpu_idle_exit
+  __traceiter_android_vh_gpio_block_read
+  __traceiter_android_vh_jiffies_update
+  __traceiter_android_vh_rproc_recovery_set
+  __traceiter_android_vh_scheduler_tick
+  __traceiter_android_vh_tune_scan_type
+  __traceiter_rwmmio_post_read
+  __traceiter_rwmmio_read
+  __traceiter_rwmmio_write
+  __traceiter_sched_switch
+  __traceiter_suspend_resume
+  __traceiter_task_rename
+  __tracepoint_android_rvh_cpu_cgroup_attach
+  __tracepoint_android_rvh_cpu_cgroup_online
+  __tracepoint_android_rvh_do_sched_yield
+  __tracepoint_android_rvh_flush_task
+  __tracepoint_android_rvh_new_task_stats
+  __tracepoint_android_rvh_try_to_wake_up
+  __tracepoint_android_rvh_wake_up_new_task
+  __tracepoint_android_vh_check_uninterruptible_tasks
+  __tracepoint_android_vh_check_uninterruptible_tasks_dn
+  __tracepoint_android_vh_cpu_idle_enter
+  __tracepoint_android_vh_cpu_idle_exit
+  __tracepoint_android_vh_gpio_block_read
+  __tracepoint_android_vh_jiffies_update
+  __tracepoint_android_vh_rproc_recovery_set
+  __tracepoint_android_vh_scheduler_tick
+  __tracepoint_android_vh_tune_scan_type
+  tracepoint_probe_register
+  tracepoint_probe_register_prio
+  tracepoint_probe_unregister
+  __tracepoint_rwmmio_post_read
+  __tracepoint_rwmmio_read
+  __tracepoint_rwmmio_write
+  __tracepoint_sched_switch
+  __tracepoint_suspend_resume
+  __tracepoint_task_rename
+  trace_print_array_seq
+  trace_print_symbols_seq
+  __trace_puts
+  trace_raw_output_prep
+  trace_seq_printf
+  try_module_get
+  try_to_free_mem_cgroup_pages
+  try_wait_for_completion
+  tty_flip_buffer_push
+  uart_add_one_port
+  uart_register_driver
+  uart_remove_one_port
+  uart_try_toggle_sysrq
+  uart_unregister_driver
+  uclamp_eff_value
+  __udelay
+  ufshcd_hold
+  ufshcd_query_descriptor_retry
+  ufshcd_release
+  __unregister_chrdev
+  unregister_chrdev_region
+  unregister_kretprobe
+  unregister_pm_notifier
+  unregister_reboot_notifier
+  unregister_restart_handler
+  unregister_rpmsg_driver
+  unregister_shrinker
+  up
+  up_read
+  up_write
+  usb_add_phy_dev
+  usb_assign_descriptors
+  usb_control_msg
+  usb_deregister
+  usb_ep_alloc_request
+  usb_ep_autoconfig
+  usb_ep_dequeue
+  usb_ep_disable
+  usb_ep_enable
+  usb_ep_free_request
+  usb_ep_queue
+  usb_ep_set_halt
+  usb_free_all_descriptors
+  usb_function_register
+  usb_function_unregister
+  usb_gadget_wakeup
+  usb_gadget_connect
+  usb_gadget_disconnect
+  usb_interface_id
+  usb_put_function_instance
+  usb_register_driver
+  usb_remove_phy
+  usb_role_switch_set_role
+  usb_string_id
+  __usecs_to_jiffies
+  usleep_range
+  vabits_actual
+  vchan_dma_desc_free_list
+  vchan_init
+  vchan_tx_desc_free
+  vchan_tx_submit
+  vfree
+  vmalloc
+  vmalloc_to_page
+  vmalloc_user
+  vmap
+  vm_node_stat
+  vm_zone_stat
+  vscnprintf
+  vsnprintf
+  vunmap
+  vzalloc
+  wait_for_completion
+  wait_for_completion_interruptible
+  wait_for_completion_interruptible_timeout
+  wait_for_completion_timeout
+  __wake_up
+  wake_up_if_idle
+  wake_up_process
+  wakeup_source_add
+  wakeup_source_create
+  wakeup_source_destroy
+  wakeup_source_register
+  wakeup_source_remove
+  wakeup_source_unregister
+  __warn_printk
+  ww_mutex_lock
+  ww_mutex_unlock
+  xa_erase
+  xa_find
+  xa_find_after
+  xa_load
+  xa_store
+
+# required by adsp_battery.ko
+  thermal_zone_device_disable
+
+# required by aisched.ko
+  register_kprobe
+
+# required by arm_smmu.ko
+  bus_set_iommu
+  devm_krealloc
+  devm_of_icc_get
+  devm_platform_get_and_ioremap_resource
+  devm_regulator_bulk_get
+  driver_find_device
+  generic_device_group
+  iommu_device_register
+  iommu_device_sysfs_add
+  iommu_device_sysfs_remove
+  iommu_device_unregister
+  iommu_dma_get_resv_regions
+  iommu_fwspec_add_ids
+  iommu_fwspec_free
+  iommu_get_dma_cookie
+  iommu_group_for_each_dev
+  iommu_group_get_iommudata
+  iommu_group_ref_get
+  iommu_group_set_iommudata
+  iommu_present
+  of_dma_is_coherent
+  pci_device_group
+  regulator_bulk_disable
+  report_iommu_fault
+  __trace_bprintk
+  __trace_bputs
+
+# required by aw_haptic.ko
+  devm_led_classdev_unregister
+  input_ff_create
+  input_ff_destroy
+
+# required by bam_dma.ko
+  pm_runtime_irq_safe
+  tasklet_setup
+  vchan_find_desc
+
+# required by bootfail.ko
+  stack_trace_save
+
+# required by bt_fm_slim.ko
+  snd_pcm_format_width
+  snd_soc_add_component_controls
+  snd_soc_info_volsw
+  snd_soc_register_component
+  snd_soc_unregister_component
+
+# required by btpower.ko
+  rfkill_init_sw_state
+
+# required by bwmon.ko
+  argv_free
+  argv_split
+
+# required by cam_buck.ko
+  regulator_set_voltage_time_sel
+
+# required by cdsprm.ko
+  do_exit
+
+# required by cfg80211.ko
+  debugfs_rename
+  dev_change_net_namespace
+  dev_close
+  __dev_get_by_index
+  dev_get_by_index
+  device_rename
+  eth_type_trans
+  gcd
+  genlmsg_multicast_allns
+  get_net_ns_by_fd
+  get_net_ns_by_pid
+  inet_csk_get_port
+  key_create_or_update
+  key_put
+  keyring_alloc
+  kvfree_call_rcu
+  __netdev_alloc_skb
+  netdev_err
+  netif_rx_ni
+  netlink_register_notifier
+  netlink_unregister_notifier
+  net_ns_type_operations
+  nla_memcpy
+  __nla_parse
+  nla_put_64bit
+  param_ops_charp
+  __put_net
+  register_netdevice_notifier
+  register_pernet_device
+  rfkill_blocked
+  rfkill_pause_polling
+  rfkill_resume_polling
+  rfkill_set_hw_state
+  rtnl_is_locked
+  __sw_hweight16
+  unregister_netdevice_notifier
+  unregister_pernet_device
+  verify_pkcs7_signature
+  wireless_nlevent_flush
+
+# required by chr_misc_device.ko
+  skb_queue_head
+
+# required by clk-dummy.ko
+  of_clk_add_provider
+  of_clk_src_simple_get
+
+# required by clk-qcom.ko
+  __clk_determine_rate
+  clk_fixed_factor_ops
+  clk_fixed_rate_ops
+  __clk_get_hw
+  __clk_get_name
+  clk_get_parent
+  clk_hw_get_flags
+  clk_hw_get_num_parents
+  clk_hw_get_parent
+  clk_hw_get_parent_by_index
+  clk_hw_get_rate
+  clk_hw_is_enabled
+  clk_hw_round_rate
+  __clk_mux_determine_rate_closest
+  clk_sync_state
+  devm_add_action
+  divider_get_val
+  divider_recalc_rate
+  divider_ro_round_rate_parent
+  divider_round_rate_parent
+  pm_clk_add
+  pm_clk_create
+  pm_clk_destroy
+  pm_clk_resume
+  pm_clk_suspend
+  pm_genpd_add_subdomain
+  pm_genpd_remove_subdomain
+  rational_best_approximation
+  regmap_mmio_detach_clk
+
+# required by clk-spmi-pmic-div.ko
+  of_clk_get_parent_name
+
+# required by cnss_prealloc.ko
+  kmem_cache_create_usercopy
+  mempool_alloc_slab
+  mempool_free_slab
+
+# required by coresight-cti.ko
+  __bitmap_or
+  device_property_read_u32_array
+  fwnode_find_reference
+  fwnode_get_next_child_node
+  fwnode_property_read_string
+
+# required by coresight-tmc.ko
+  device_property_read_string
+  dma_alloc_noncoherent
+  dma_free_noncoherent
+
+# required by coresight.ko
+  fwnode_handle_get
+  hashlen_string
+  krealloc
+  of_get_next_parent
+  of_graph_get_next_endpoint
+  of_graph_get_port_parent
+  of_graph_get_remote_endpoint
+  of_graph_is_present
+  of_graph_parse_endpoint
+  perf_aux_output_begin
+  perf_aux_output_end
+  perf_pmu_register
+  perf_pmu_unregister
+  sysfs_add_file_to_group
+  sysfs_add_link_to_group
+  sysfs_remove_file_from_group
+  sysfs_remove_link_from_group
+
+# required by cqhci.ko
+  dmam_free_coherent
+  mmc_cqe_request_done
+
+# required by debug-regulator.ko
+  regulator_allow_bypass
+  regulator_force_disable
+  regulator_get_mode
+  regulator_get_voltage_rdev
+
+# required by dma_buf_sysfs_async.ko
+  __traceiter_android_rvh_dma_buf_stats_teardown
+  __tracepoint_android_rvh_dma_buf_stats_teardown
+
+# required by dmesg_dumper.ko
+  kmsg_dump_get_line
+  kmsg_dump_register
+  kmsg_dump_unregister
+
+# required by dp_cust_dlkm.ko
+  drm_edid_get_monitor_name
+
+# required by dsm_core.ko
+  __kfifo_to_user
+  __printk_ratelimit
+
+# required by dubai_common.ko
+  access_process_vm
+  sprint_symbol_no_offset
+  __traceiter_workqueue_execute_end
+  __traceiter_workqueue_execute_start
+  __tracepoint_workqueue_execute_end
+  __tracepoint_workqueue_execute_start
+
+# required by dwc3-msm.ko
+  device_wakeup_disable
+  devm_usb_get_phy_by_node
+  extcon_get_edev_by_phandle
+  extcon_get_edev_name
+  extcon_register_notifier
+  irq_set_irqchip_state
+  irq_set_irq_type
+  __traceiter_dwc3_readl
+  __tracepoint_dwc3_readl
+  usb_decode_ctrl
+  usb_ep_set_maxpacket_limit
+  usb_phy_set_charger_current
+  usb_register_notify
+  usb_role_switch_find_by_fwnode
+  usb_role_switch_get_drvdata
+  usb_role_switch_register
+  usb_role_switch_unregister
+  usb_speed_string
+  usb_unregister_notify
+
+# required by eud.ko
+  extcon_set_state
+  uart_insert_char
+
+# required by fingerprint.ko
+  simple_strtoul
+
+# required by frpc-adsprpc.ko
+  dma_buf_begin_cpu_access_partial
+  dma_buf_end_cpu_access_partial
+  iommu_dma_enable_best_fit_algo
+
+# required by fsa4480-i2c.ko
+  of_find_i2c_device_by_node
+
+# required by gh_arm_drv.ko
+  irq_create_fwspec_mapping
+
+# required by gh_ctrl.ko
+  hypervisor_kobj
+
+# required by gh_msgq.ko
+  of_property_read_u64_index
+
+# required by gh_rm_drv.ko
+  uuid_parse
+
+# required by gh_virtio_backend.ko
+  add_wait_queue
+  eventfd_ctx_fdget
+  eventfd_ctx_put
+  eventfd_ctx_remove_wait_queue
+
+# required by glink_pkt.ko
+  memdup_user
+  rpmsg_get_signals
+  rpmsg_poll
+  rpmsg_set_signals
+
+# required by goodix_core.ko
+  input_mt_sync_frame
+  single_open_size
+
+# required by hangdetect_cpu.ko
+  kthread_bind
+  kthread_park
+  kthread_parkme
+  kthread_should_park
+  kthread_unpark
+
+# required by hangdetect_userpet.ko
+  send_sig
+
+# required by honor_battery_leakage.ko
+  hrtimer_forward
+
+# required by honor_camera_pmic.ko
+  of_regulator_match
+  rdev_get_dev
+  rdev_get_id
+  regulator_list_voltage_linear_range
+  regulator_map_voltage_linear_range
+
+# required by honor_fas.ko
+  sched_setattr_nocheck
+  __traceiter_android_rvh_sched_fork
+  __traceiter_sched_waking
+  __tracepoint_android_rvh_sched_fork
+  __tracepoint_sched_waking
+
+# required by honor_hung_task.ko
+  param_array_ops
+  strcspn
+
+# required by hteedrv_spi.ko
+  spi_write_then_read
+
+# required by hung_task_enh.ko
+  unregister_sysctl_table
+
+# required by hvc_gunyah.ko
+  hvc_alloc
+  hvc_kick
+  hvc_poll
+  hvc_remove
+
+# required by hw_kcollect.ko
+  __traceiter_android_vh_binder_alloc_new_buf_locked
+  __traceiter_android_vh_binder_trans
+  __traceiter_android_vh_do_send_sig_info
+  __tracepoint_android_vh_binder_alloc_new_buf_locked
+  __tracepoint_android_vh_binder_trans
+  __tracepoint_android_vh_do_send_sig_info
+
+# required by hw_procnetstat.ko
+  nf_register_net_hooks
+
+# required by hw_usb_sync_host_time.ko
+  mktime64
+  rtc_class_open
+  rtc_set_time
+
+# required by hyp_core_ctl.ko
+  bitmap_parselist_user
+
+# required by i2c-msm-geni.ko
+  i2c_add_adapter
+  i2c_del_adapter
+  i2c_get_dma_safe_msg_buf
+  i2c_put_dma_safe_msg_buf
+
+# required by icc-bcm-voter.ko
+  list_sort
+
+# required by icc-rpmh.ko
+  clk_bulk_put_all
+  icc_link_create
+  icc_node_add
+  icc_node_create
+  icc_node_del
+  icc_node_destroy
+  icc_provider_add
+  icc_provider_del
+  of_icc_xlate_onecell
+
+# required by icc-test.ko
+  icc_get
+
+# required by icnss2.ko
+  devm_device_add_group
+  devm_device_remove_group
+  remove_proc_subtree
+  rproc_put
+
+# required by leds-qpnp-flash-v2.ko
+  iio_write_channel_raw
+  led_classdev_register_ext
+  led_classdev_unregister
+
+# required by leds-qti-tri-led.ko
+  devm_of_pwm_get
+
+# required by logger.ko
+  autoremove_wake_function
+  prepare_to_wait
+
+# required by lvstest.ko
+  usb_alloc_dev
+  usb_alloc_urb
+  usb_find_common_endpoints
+  usb_free_urb
+  usb_poison_urb
+  usb_put_dev
+  usb_set_device_state
+  usb_submit_urb
+
+# required by lzo-rle.ko
+  lzorle1x_1_compress
+
+# required by lzo.ko
+  lzo1x_1_compress
+
+# required by mdt_loader.ko
+  request_firmware_into_buf
+
+# required by mem-hooks.ko
+  __traceiter_android_rvh_set_balance_anon_file_reclaim
+  __traceiter_android_rvh_set_gfp_zone_flags
+  __traceiter_android_rvh_set_readahead_gfp_mask
+  __traceiter_android_rvh_set_skip_swapcache_flags
+  __traceiter_android_vh_process_killed
+  __tracepoint_android_rvh_set_balance_anon_file_reclaim
+  __tracepoint_android_rvh_set_gfp_zone_flags
+  __tracepoint_android_rvh_set_readahead_gfp_mask
+  __tracepoint_android_rvh_set_skip_swapcache_flags
+  __tracepoint_android_vh_oom_check_panic
+  __tracepoint_android_vh_process_killed
+  __tracepoint_android_vh_subpage_dma_contig_alloc
+
+# required by mem-offline.ko
+  add_memory
+  get_pfnblock_flags_mask
+  inc_node_page_state
+  isolate_and_split_free_page
+  isolate_anon_lru_page
+  memblock_end_of_DRAM
+  memory_block_size_bytes
+  migrate_pages
+  of_root
+  putback_movable_pages
+  register_memory_notifier
+
+# required by mem_buf.ko
+  flush_delayed_fput
+  strncpy_from_user
+
+# required by mem_buf_dev.ko
+  add_memory_subsection
+  class_for_each_device
+  dma_buf_export
+  remove_memory_subsection
+  __xa_alloc
+  xa_destroy
+
+# required by mhi.ko
+  prandom_u32
+  __tasklet_hi_schedule
+
+# required by mhi_dev_netdev.ko
+  alloc_netdev_mqs
+  ether_setup
+  free_netdev
+  napi_complete_done
+  napi_disable
+  __napi_schedule
+  napi_schedule_prep
+  netif_napi_add
+  __netif_napi_del
+  netif_receive_skb
+  netif_tx_wake_queue
+  register_netdev
+  synchronize_net
+  unregister_netdev
+
+# required by minidump.ko
+  android_debug_for_each_module
+  android_debug_per_cpu_symbol
+  android_debug_symbol
+  dma_contiguous_default_area
+  get_each_dmabuf
+  get_each_object_track
+  get_slabinfo
+  pcpu_nr_pages
+  per_cpu_ptr_to_phys
+  register_module_notifier
+  seq_buf_printf
+  __traceiter_android_vh_ftrace_dump_buffer
+  __traceiter_android_vh_ftrace_format_check
+  __traceiter_android_vh_ftrace_oops_enter
+  __traceiter_android_vh_ftrace_oops_exit
+  __traceiter_android_vh_ftrace_size_check
+  __tracepoint_android_vh_ftrace_dump_buffer
+  __tracepoint_android_vh_ftrace_format_check
+  __tracepoint_android_vh_ftrace_oops_enter
+  __tracepoint_android_vh_ftrace_oops_exit
+  __tracepoint_android_vh_ftrace_size_check
+
+# required by msm_ext_display.ko
+  devm_extcon_dev_unregister
+
+# required by msm_geni_serial.ko
+  console_stop
+  console_suspend_enabled
+  hex_dump_to_buffer
+  __tty_insert_flip_char
+  tty_insert_flip_string_fixed_flag
+  uart_console_device
+  uart_console_write
+  uart_get_baud_rate
+  uart_parse_options
+  uart_resume_port
+  uart_set_options
+  uart_suspend_port
+  uart_update_timeout
+  uart_write_wakeup
+
+# required by msm_kgsl.ko
+  check_zeroed_user
+  clear_page
+  component_add
+  component_bind_all
+  component_del
+  component_master_add_with_match
+  component_master_del
+  component_match_add_release
+  component_unbind_all
+  _dev_crit
+  devfreq_add_device
+  devfreq_add_governor
+  devfreq_cooling_unregister
+  devfreq_remove_device
+  devfreq_remove_governor
+  devfreq_resume_device
+  devfreq_suspend_device
+  device_show_int
+  device_store_int
+  dev_pm_opp_find_freq_exact
+  dev_pm_opp_get_voltage
+  dma_fence_free
+  getboottime64
+  get_random_u32
+  get_task_pid
+  get_unmapped_area
+  get_user_pages
+  idr_replace
+  input_unregister_handler
+  interval_tree_insert
+  interval_tree_iter_first
+  interval_tree_iter_next
+  interval_tree_remove
+  iommu_domain_set_attr
+  kstrdup_quotable_cmdline
+  kthread_create_worker
+  kthread_destroy_worker
+  ktime_get_real_seconds
+  llist_add_batch
+  llist_reverse_order
+  nvmem_cell_read_u32
+  of_devfreq_cooling_register
+  of_find_matching_node_and_match
+  put_pid
+  _raw_spin_trylock_bh
+  rb_last
+  rb_prev
+  __rt_mutex_init
+  rt_mutex_lock
+  rt_mutex_trylock
+  rt_mutex_unlock
+  sched_set_fifo
+  set_page_dirty_lock
+  shmem_read_mapping_page_gfp
+  sync_file_create
+  sync_file_get_fence
+  trace_array_put
+  __traceiter_gpu_mem_total
+  __tracepoint_gpu_mem_total
+  trace_print_flags_seq
+  update_devfreq
+  vmf_insert_pfn
+  vm_insert_page
+
+# required by msm_performance.ko
+  cpufreq_get_policy
+  kset_create_and_add
+
+# required by msm_qmp.ko
+  mbox_chan_txdone
+
+# required by msm_rng.ko
+  crypto_register_rngs
+  crypto_unregister_rngs
+  hwrng_register
+  hwrng_unregister
+
+# required by msm_sharedmem.ko
+  __uio_register_device
+  uio_unregister_device
+
+# required by msm_show_epoch.ko
+  __traceiter_android_vh_show_resume_epoch_val
+  __traceiter_android_vh_show_suspend_epoch_val
+  __tracepoint_android_vh_show_resume_epoch_val
+  __tracepoint_android_vh_show_suspend_epoch_val
+
+# required by msm_show_resume_irq.ko
+  gic_resume
+  __traceiter_android_vh_cpuidle_psci_enter
+  __traceiter_android_vh_cpuidle_psci_exit
+  __traceiter_android_vh_gic_resume
+  __tracepoint_android_vh_cpuidle_psci_enter
+  __tracepoint_android_vh_cpuidle_psci_exit
+  __tracepoint_android_vh_gic_resume
+
+# required by msm_sysstats.ko
+  cgroup_path_ns
+  nla_reserve_64bit
+  pid_nr_ns
+  task_active_pid_ns
+  vmalloc_nr_pages
+
+# required by pci-msm-drv.ko
+  crc8
+  crc8_populate_msb
+  devm_pci_alloc_host_bridge
+  get_option
+  handle_simple_irq
+  irq_domain_free_irqs_parent
+  of_irq_parse_one
+  pci_aer_clear_nonfatal_status
+  pci_device_is_present
+  pcie_capability_clear_and_set_word
+  pcie_capability_read_word
+  pci_enable_device
+  pci_enable_pcie_error_reporting
+  pci_find_ext_capability
+  pci_get_device
+  pci_get_domain_bus_and_slot
+  pci_host_probe
+  pci_load_and_free_saved_state
+  pci_load_saved_state
+  pci_msi_create_irq_domain
+  pci_msi_mask_irq
+  pci_msi_unmask_irq
+  pci_read_config_dword
+  pci_read_config_word
+  __pci_register_driver
+  pci_remove_root_bus
+  pci_restore_state
+  pci_save_state
+  pci_set_master
+  pci_stop_root_bus
+  pci_store_saved_state
+  pci_walk_bus
+  pci_write_config_dword
+
+# required by phy-generic.ko
+  devm_regulator_get_exclusive
+  gpiod_direction_output
+  gpiod_get_value
+  regulator_set_current_limit
+
+# required by phy-msm-snps-hs.ko
+  debugfs_create_x8
+  devm_clk_get_optional
+
+# required by phy-qcom-ufs.ko
+  __devm_of_phy_provider_register
+  devm_phy_create
+  of_phy_simple_xlate
+
+# required by pinctrl-msm.ko
+  device_property_read_u16_array
+  gpiochip_line_is_valid
+  gpiochip_lock_as_irq
+  gpiochip_unlock_as_irq
+  handle_bad_irq
+  handle_fasteoi_ack_irq
+  handle_fasteoi_irq
+  pinctrl_force_default
+  pinctrl_force_sleep
+  pm_power_off
+
+# required by pinctrl-spmi-gpio.ko
+  irq_chip_ack_parent
+
+# required by pinctrl-spmi-mpp.ko
+  platform_irq_count
+
+# required by pwm-qti-lpg.ko
+  pwmchip_add
+  pwmchip_remove
+
+# required by qcedev-mod.ko
+  ksize
+
+# required by qcom-cpufreq-hw.ko
+  cpufreq_cooling_unregister
+  cpufreq_freq_attr_scaling_available_freqs
+  cpufreq_freq_attr_scaling_boost_freqs
+  cpufreq_generic_frequency_table_verify
+  cpufreq_register_driver
+  cpufreq_unregister_driver
+  dev_pm_opp_of_register_em
+  dev_pm_opp_remove_all_dynamic
+  dev_pm_opp_set_sharing_cpus
+  of_cpufreq_cooling_register
+  topology_set_thermal_pressure
+
+# required by qcom-pdc.ko
+  irq_chip_get_parent_state
+  irq_chip_retrigger_hierarchy
+  irq_domain_alloc_irqs_parent
+  irq_domain_create_hierarchy
+  irq_domain_disconnect_hierarchy
+  irq_domain_set_hwirq_and_chip
+  irq_domain_update_bus_token
+
+# required by qcom-pmu-lib.ko
+  perf_event_create_kernel_counter
+  perf_event_enable
+  perf_event_read_local
+  perf_event_read_value
+  perf_event_release_kernel
+
+# required by qcom-reboot-reason.ko
+  nvmem_cell_write
+
+# required by qcom-scm.ko
+  __arm_smccc_smc
+  gen_pool_best_fit
+  idr_alloc_u32
+
+# required by qcom-spmi-adc5.ko
+  devm_iio_device_alloc
+  __devm_iio_device_register
+
+# required by qcom-spmi-pmic.ko
+  __spmi_driver_register
+
+# required by qcom-spmi-temp-alarm.ko
+  of_thermal_get_ntrips
+  of_thermal_get_trip_points
+  of_thermal_is_trip_valid
+
+# required by qcom_aoss.ko
+  clk_hw_register
+  clk_hw_unregister
+  of_clk_add_hw_provider
+  of_clk_hw_simple_get
+  pm_genpd_remove
+
+# required by qcom_cpu_vendor_hooks.ko
+  copy_from_kernel_nofault
+  kimage_vaddr
+  show_regs
+  __traceiter_android_vh_ipi_stop
+  __traceiter_android_vh_printk_hotplug
+  __traceiter_android_vh_timer_calc_index
+  __tracepoint_android_rvh_do_ptrauth_fault
+  __tracepoint_android_rvh_do_undefinstr
+  __tracepoint_android_vh_ipi_stop
+  __tracepoint_android_vh_printk_hotplug
+  __tracepoint_android_vh_timer_calc_index
+
+# required by qcom_cpuss_sleep_stats.ko
+  simple_write_to_buffer
+
+# required by qcom_dma_heaps.ko
+  deferred_free
+  dma_heap_add
+  dma_heap_get_dev
+  dma_heap_get_drvdata
+  dma_heap_get_name
+  gen_pool_avail
+  gen_pool_size
+  gfp_zone
+  __next_zones_zonelist
+  sched_setattr
+  zone_watermark_ok_safe
+
+# required by qcom_glink.ko
+  device_add_groups
+  pm_system_wakeup
+
+# required by qcom_hwspinlock.ko
+  devm_hwspin_lock_register
+
+# required by qcom_iommu_debug.ko
+  iommu_iova_to_phys
+  of_platform_device_destroy
+  __sg_page_iter_dma_next
+
+# required by qcom_iommu_util.ko
+  alloc_io_pgtable_ops
+  free_io_pgtable_ops
+  gen_pool_first_fit_order_align
+  gen_pool_has_addr
+  init_iova_domain
+  iommu_get_msi_cookie
+  put_iova_domain
+  sg_miter_next
+  sg_miter_start
+  sg_miter_stop
+  __traceiter_android_rvh_iommu_setup_dma_ops
+  __tracepoint_android_rvh_iommu_setup_dma_ops
+  vmalloc_to_pfn
+  vm_map_pages
+
+# required by qcom_logbuf_vendor_hooks.ko
+  __traceiter_android_vh_logbuf
+  __traceiter_android_vh_logbuf_pr_cont
+  __tracepoint_android_vh_logbuf
+  __tracepoint_android_vh_logbuf_pr_cont
+
+# required by qcom_lpm.ko
+  cpu_bit_bitmap
+  cpuidle_governor_latency_req
+  cpuidle_register_governor
+  dev_pm_genpd_remove_notifier
+  dev_pm_genpd_set_next_wakeup
+  int_sqrt
+  tick_nohz_get_sleep_length
+  __traceiter_android_vh_allow_domain_state
+  __traceiter_ipi_entry
+  __traceiter_ipi_raise
+  __tracepoint_android_vh_allow_domain_state
+  __tracepoint_ipi_entry
+  __tracepoint_ipi_raise
+
+# required by qcom_pm8008-regulator.ko
+  devm_regulator_register_notifier
+  regulator_get_drvdata
+
+# required by qcom_q6v5_adsp.ko
+  devm_clk_bulk_get
+
+# required by qcom_q6v5_pas.ko
+  dev_pm_domain_attach_by_name
+  dev_pm_domain_detach
+
+# required by qcom_ramdump.ko
+  dev_coredumpm
+
+# required by qcom_rpmh.ko
+  dev_pm_domain_attach
+  irq_get_irqchip_state
+
+# required by qcom_smd.ko
+  __ioread32_copy
+
+# required by qcom_sysmon.ko
+  rproc_get_by_child
+
+# required by qcom_tsens.ko
+  thermal_zone_get_slope
+
+# required by qcom_wdt_core.ko
+  disable_percpu_irq
+  enable_percpu_irq
+  free_percpu_irq
+  ipi_desc_get
+  kstat
+  kstat_irqs_cpu
+  kstat_irqs_usr
+  nr_ipi_get
+  nr_irqs
+  panic_timeout
+  register_die_notifier
+  __request_percpu_irq
+  unregister_die_notifier
+  unregister_syscore_ops
+
+# required by qpnp-power-on.ko
+  _dev_emerg
+
+# required by qrtr.ko
+  alloc_skb_with_frags
+  _copy_from_iter_full
+  datagram_poll
+  kernel_bind
+  lock_sock_nested
+  proto_register
+  proto_unregister
+  radix_tree_insert
+  radix_tree_iter_delete
+  radix_tree_lookup
+  radix_tree_next_chunk
+  refcount_dec_not_one
+  release_sock
+  sk_alloc
+  skb_clone
+  skb_copy_datagram_iter
+  skb_free_datagram
+  __skb_pad
+  skb_recv_datagram
+  skb_set_owner_w
+  skb_store_bits
+  sk_free
+  sock_alloc_send_skb
+  sock_gettstamp
+  sock_init_data
+  sock_no_accept
+  sock_no_listen
+  sock_no_mmap
+  sock_no_sendpage
+  sock_no_shutdown
+  sock_no_socketpair
+  sock_queue_rcv_skb
+  sock_register
+  sock_setsockopt
+  sock_unregister
+  __xa_insert
+
+# required by qseecom-mod.ko
+  __arch_copy_in_user
+  dma_buf_vmap
+  dma_buf_vunmap
+  sigprocmask
+
+# required by qti-adc-tm.ko
+  iio_channel_get_all
+
+# required by qti-fixed-regulator.ko
+  gpiod_get_optional
+
+# required by qti-regmap-debugfs.ko
+  debugfs_create_x32
+  regmap_check_range_table
+
+# required by qti_devfreq_cdev.ko
+  devfreq_get_devfreq_by_node
+
+# required by radio-i2c-rtc6226-qca.ko
+  request_any_context_irq
+  v4l2_compat_ioctl32
+  v4l2_ctrl_handler_free
+  v4l2_device_register
+  v4l2_device_unregister
+  video_devdata
+  video_device_release_empty
+  video_ioctl2
+  __video_register_device
+  video_unregister_device
+
+# required by rainbow.ko
+  sprint_symbol
+
+# required by rcc.ko
+  down_timeout
+  nsec_to_clock_t
+
+# required by regmap-spmi.ko
+  __devm_regmap_init
+  __regmap_init
+  spmi_ext_register_read
+  spmi_ext_register_readl
+  spmi_ext_register_write
+  spmi_ext_register_writel
+  spmi_register_read
+  spmi_register_write
+  spmi_register_zero_write
+
+# required by rproc_qcom_common.ko
+  dev_coredumpv
+  rproc_coredump
+  rproc_coredump_add_custom_segment
+  __traceiter_android_vh_rproc_recovery
+  __tracepoint_android_vh_rproc_recovery
+
+# required by rt9426a_battery.ko
+  regmap_raw_read
+  regmap_raw_write
+
+# required by rtc-pm8xxx.ko
+  devm_request_any_context_irq
+  devm_rtc_allocate_device
+  __rtc_register_device
+  rtc_update_irq
+  rtc_valid_tm
+
+# required by sched-hn.ko
+  __traceiter_task_newtask
+  __tracepoint_task_newtask
+
+# required by sched-walt.ko
+  activate_task
+  available_idle_cpu
+  check_preempt_curr
+  cpufreq_disable_fast_switch
+  cpufreq_driver_fast_switch
+  cpufreq_driver_resolve_freq
+  __cpufreq_driver_target
+  cpufreq_enable_fast_switch
+  cpufreq_register_governor
+  cpu_irqtime
+  cpu_maps_update_begin
+  cpu_maps_update_done
+  cpupri_find_fitness
+  cpu_topology
+  deactivate_task
+  d_path
+  freq_scale
+  get_governor_parent_kobj
+  gov_attr_set_init
+  gov_attr_set_put
+  governor_sysfs_ops
+  irq_work_queue_on
+  irq_work_sync
+  ksoftirqd
+  migrate_swap
+  pause_cpus
+  pick_highest_pushable_task
+  printk_deferred
+  proc_dostring
+  proc_douintvec_minmax
+  resched_curr
+  resume_cpus
+  sched_feat_keys
+  sched_feat_names
+  sched_trace_rd_span
+  sched_uclamp_used
+  set_task_cpu
+  smp_call_function_single_async
+  static_key_disable
+  stop_machine
+  stop_one_cpu_nowait
+  sysctl_sched_features
+  task_may_not_preempt
+  __task_rq_lock
+  task_rq_lock
+  thermal_pressure
+  topology_update_done
+  __traceiter_android_rvh_account_irq
+  __traceiter_android_rvh_after_dequeue_task
+  __traceiter_android_rvh_after_enqueue_task
+  __traceiter_android_rvh_binder_transaction
+  __traceiter_android_rvh_build_perf_domains
+  __traceiter_android_rvh_can_migrate_task
+  __traceiter_android_rvh_cgroup_force_kthread_migration
+  __traceiter_android_rvh_check_preempt_wakeup
+  __traceiter_android_rvh_find_busiest_queue
+  __traceiter_android_rvh_find_lowest_rq
+  __traceiter_android_rvh_force_compatible_post
+  __traceiter_android_rvh_force_compatible_pre
+  __traceiter_android_rvh_migrate_queued_task
+  __traceiter_android_rvh_replace_next_task_fair
+  __traceiter_android_rvh_resume_cpus
+  __traceiter_android_rvh_sched_cpu_dying
+  __traceiter_android_rvh_sched_cpu_starting
+  __traceiter_android_rvh_sched_exec
+  __traceiter_android_rvh_sched_fork_init
+  __traceiter_android_rvh_sched_newidle_balance
+  __traceiter_android_rvh_sched_nohz_balancer_kick
+  __traceiter_android_rvh_sched_setaffinity
+  __traceiter_android_rvh_schedule
+  __traceiter_android_rvh_select_task_rq_fair
+  __traceiter_android_rvh_select_task_rq_rt
+  __traceiter_android_rvh_set_task_cpu
+  __traceiter_android_rvh_show_max_freq
+  __traceiter_android_rvh_tick_entry
+  __traceiter_android_rvh_try_to_wake_up_success
+  __traceiter_android_rvh_ttwu_cond
+  __traceiter_android_rvh_update_cpu_capacity
+  __traceiter_android_rvh_update_cpus_allowed
+  __traceiter_android_rvh_update_misfit_status
+  __traceiter_android_vh_alter_futex_plist_add
+  __traceiter_android_vh_alter_mutex_list_add
+  __traceiter_android_vh_alter_rwsem_list_add
+  __traceiter_android_vh_binder_priority_skip
+  __traceiter_android_vh_binder_proc_transaction
+  __traceiter_android_vh_binder_restore_priority
+  __traceiter_android_vh_binder_set_priority
+  __traceiter_android_vh_binder_thread_read
+  __traceiter_android_vh_binder_wakeup_ilocked
+  __traceiter_android_vh_dump_throttled_rt_tasks
+  __traceiter_android_vh_mutex_unlock_slowpath
+  __traceiter_android_vh_mutex_wait_start
+  __traceiter_android_vh_rwsem_init
+  __traceiter_android_vh_rwsem_wake
+  __traceiter_android_vh_rwsem_write_finished
+  __traceiter_android_vh_update_topology_flags_workfn
+  __traceiter_binder_transaction_received
+  __traceiter_cpu_frequency_limits
+  __traceiter_sched_overutilized_tp
+  __tracepoint_android_rvh_account_irq
+  __tracepoint_android_rvh_after_dequeue_task
+  __tracepoint_android_rvh_after_enqueue_task
+  __tracepoint_android_rvh_binder_transaction
+  __tracepoint_android_rvh_build_perf_domains
+  __tracepoint_android_rvh_can_migrate_task
+  __tracepoint_android_rvh_cgroup_force_kthread_migration
+  __tracepoint_android_rvh_check_preempt_wakeup
+  __tracepoint_android_rvh_find_busiest_queue
+  __tracepoint_android_rvh_find_lowest_rq
+  __tracepoint_android_rvh_force_compatible_post
+  __tracepoint_android_rvh_force_compatible_pre
+  __tracepoint_android_rvh_migrate_queued_task
+  __tracepoint_android_rvh_replace_next_task_fair
+  __tracepoint_android_rvh_resume_cpus
+  __tracepoint_android_rvh_sched_cpu_dying
+  __tracepoint_android_rvh_sched_cpu_starting
+  __tracepoint_android_rvh_sched_exec
+  __tracepoint_android_rvh_sched_fork_init
+  __tracepoint_android_rvh_sched_newidle_balance
+  __tracepoint_android_rvh_sched_nohz_balancer_kick
+  __tracepoint_android_rvh_sched_setaffinity
+  __tracepoint_android_rvh_schedule
+  __tracepoint_android_rvh_select_task_rq_fair
+  __tracepoint_android_rvh_select_task_rq_rt
+  __tracepoint_android_rvh_set_task_cpu
+  __tracepoint_android_rvh_show_max_freq
+  __tracepoint_android_rvh_tick_entry
+  __tracepoint_android_rvh_try_to_wake_up_success
+  __tracepoint_android_rvh_ttwu_cond
+  __tracepoint_android_rvh_update_cpu_capacity
+  __tracepoint_android_rvh_update_cpus_allowed
+  __tracepoint_android_rvh_update_misfit_status
+  __tracepoint_android_vh_alter_futex_plist_add
+  __tracepoint_android_vh_alter_mutex_list_add
+  __tracepoint_android_vh_alter_rwsem_list_add
+  __tracepoint_android_vh_binder_priority_skip
+  __tracepoint_android_vh_binder_proc_transaction
+  __tracepoint_android_vh_binder_restore_priority
+  __tracepoint_android_vh_binder_set_priority
+  __tracepoint_android_vh_binder_thread_read
+  __tracepoint_android_vh_binder_wakeup_ilocked
+  __tracepoint_android_vh_dump_throttled_rt_tasks
+  __tracepoint_android_vh_mutex_unlock_slowpath
+  __tracepoint_android_vh_mutex_wait_start
+  __tracepoint_android_vh_rwsem_init
+  __tracepoint_android_vh_rwsem_read_wait_finish
+  __tracepoint_android_vh_rwsem_wake
+  __tracepoint_android_vh_rwsem_write_finished
+  __tracepoint_android_vh_update_topology_flags_workfn
+  __tracepoint_binder_transaction_received
+  __tracepoint_cpu_frequency_limits
+  __tracepoint_sched_overutilized_tp
+  trace_seq_putc
+  update_rq_clock
+
+# required by sdhci-msm.ko
+  dev_pm_opp_of_add_table
+  dev_pm_opp_of_find_icc_paths
+  dev_pm_opp_of_remove_table
+  dev_pm_opp_put_clkname
+  dev_pm_opp_set_clkname
+  dev_pm_opp_set_rate
+  irq_set_affinity_notifier
+  __mmc_claim_host
+  mmc_detect_change
+  mmc_gpio_get_cd
+  mmc_of_parse
+  mmc_regulator_get_supply
+  mmc_regulator_set_ocr
+  mmc_regulator_set_vqmmc
+  mmc_release_host
+  mmc_send_tuning
+  mmc_set_initial_state
+  pinctrl_pm_select_default_state
+  pinctrl_pm_select_sleep_state
+  regulator_is_supported_voltage
+  __sdhci_add_host
+  sdhci_add_host
+  sdhci_cleanup_host
+  sdhci_cqe_disable
+  sdhci_cqe_enable
+  sdhci_cqe_irq
+  sdhci_dumpregs
+  sdhci_enable_clk
+  sdhci_get_property
+  sdhci_pltfm_free
+  sdhci_pltfm_init
+  sdhci_remove_host
+  sdhci_reset
+  sdhci_set_bus_width
+  sdhci_set_power_noreg
+  __sdhci_set_timeout
+  sdhci_setup_host
+
+# required by sdio_preisp.ko
+  sdio_claim_host
+  sdio_claim_irq
+  sdio_disable_func
+  sdio_enable_func
+  sdio_readb
+  sdio_readsb
+  sdio_register_driver
+  sdio_release_host
+  sdio_unregister_driver
+  sdio_writeb
+  sdio_writesb
+
+# required by sdpm_clk.ko
+  clk_notifier_register
+  clk_notifier_unregister
+  cpufreq_unregister_notifier
+
+# required by sg.ko
+  blk_execute_rq_nowait
+  blk_get_request
+  blk_put_request
+  blk_rq_map_user
+  blk_rq_map_user_iov
+  blk_rq_unmap_user
+  blk_verify_command
+  class_interface_unregister
+  fasync_helper
+  get_sg_io_hdr
+  import_iovec
+  kill_fasync
+  __module_get
+  put_sg_io_hdr
+  register_chrdev_region
+  scsi_autopm_get_device
+  scsi_autopm_put_device
+  scsi_block_when_processing_errors
+  scsi_compat_ioctl
+  scsi_device_get
+  scsi_device_put
+  scsi_ioctl
+  scsi_ioctl_block_when_processing_errors
+  scsi_normalize_sense
+  __scsi_print_sense
+  scsi_register_interface
+  sdev_prefix_printk
+  sg_scsi_ioctl
+
+# required by slimbus.ko
+  device_find_child
+
+# required by smcinvoke_mod.ko
+  __close_fd
+
+# required by smem.ko
+  hwspin_lock_free
+  __hwspin_lock_timeout
+  __hwspin_unlock
+  of_hwspin_lock_get_id
+
+# required by smp2p.ko
+  irq_domain_xlate_twocell
+  irq_set_parent
+  qcom_smem_state_register
+  qcom_smem_state_unregister
+
+# required by snd-usb-audio-qmi.ko
+  find_snd_usb_substream
+  snd_usb_enable_audio_stream
+  usb_alloc_coherent
+  usb_free_coherent
+  usb_ifnum_to_if
+  xhci_alloc_command
+  xhci_alloc_erst
+  xhci_free_command
+  xhci_get_endpoint_index
+  xhci_queue_stop_endpoint
+  xhci_ring_alloc
+  xhci_ring_cmd_db
+  xhci_ring_free
+  xhci_trb_virt_to_dma
+
+# required by socinfo.ko
+  add_device_randomness
+  soc_device_register
+  soc_device_unregister
+
+# required by spi-msm-geni.ko
+  __spi_alloc_controller
+  spi_register_controller
+  spi_unregister_controller
+
+# required by sps_drv.ko
+  debugfs_create_u8
+  synchronize_irq
+
+# required by stm_console.ko
+  register_console
+  unregister_console
+
+# required by stm_core.ko
+  bitmap_allocate_region
+  bitmap_release_region
+  class_find_device
+  configfs_register_subsystem
+  configfs_unregister_subsystem
+  config_group_init
+  config_item_get
+  config_item_put
+  device_match_name
+  init_srcu_struct
+  kobject_set_name
+  __memcat_p
+  __request_module
+  __srcu_read_lock
+  __srcu_read_unlock
+  synchronize_srcu
+  vm_iomap_memory
+
+# required by stm_ftrace.ko
+  register_ftrace_export
+  unregister_ftrace_export
+
+# required by synx-driver.ko
+  dma_fence_enable_sw_signaling
+  dma_fence_get_status
+  time64_to_tm
+
+# required by tcpc_manager.ko
+  typec_get_drvdata
+  typec_register_partner
+  typec_register_port
+  typec_set_data_role
+  typec_set_pwr_opmode
+  typec_set_pwr_role
+  typec_set_vconn_role
+  typec_unregister_partner
+  typec_unregister_port
+
+# required by thermal_pause.ko
+  __tracepoint_android_vh_disable_thermal_cooling_stats
+
+# required by thp.ko
+  spi_bus_type
+
+# required by tzdriver.ko
+  crypto_alloc_skcipher
+  crypto_skcipher_decrypt
+  crypto_skcipher_encrypt
+  crypto_skcipher_setkey
+  dma_heap_buffer_free
+  filp_open
+  get_random_bytes_arch
+  get_user_pages_remote
+  kthread_flush_work
+  vm_mmap
+  vm_munmap
+
+# required by ucsi_glink.ko
+  ucsi_connector_change
+  ucsi_create
+  ucsi_destroy
+  ucsi_get_drvdata
+  ucsi_register
+  ucsi_set_drvdata
+  ucsi_unregister
+
+# required by ufs_honor.ko
+  kstrtobool_from_user
+  scsi_block_requests
+  scsi_unblock_requests
+  ufshcd_query_attr_retry
+  ufshcd_query_flag_retry
+  ufshcd_read_desc_param
+  utf16s_to_utf8s
+
+# required by ufs_qcom.ko
+  blk_mq_rq_cpu
+  devm_phy_get
+  phy_calibrate
+  phy_exit
+  phy_init
+  phy_power_off
+  phy_power_on
+  phy_set_mode_ext
+  scsi_device_quiesce
+  __scsi_iterate_devices
+  scsi_remove_device
+  __traceiter_android_vh_ufs_check_int_errors
+  __traceiter_android_vh_ufs_clock_scaling
+  __traceiter_android_vh_ufs_compl_command
+  __traceiter_android_vh_ufs_prepare_command
+  __traceiter_android_vh_ufs_send_command
+  __traceiter_android_vh_ufs_send_tm_command
+  __traceiter_android_vh_ufs_send_uic_command
+  __traceiter_android_vh_ufs_update_sdev
+  __tracepoint_android_vh_ufs_check_int_errors
+  __tracepoint_android_vh_ufs_clock_scaling
+  __tracepoint_android_vh_ufs_compl_command
+  __tracepoint_android_vh_ufs_prepare_command
+  __tracepoint_android_vh_ufs_send_command
+  __tracepoint_android_vh_ufs_send_tm_command
+  __tracepoint_android_vh_ufs_send_uic_command
+  __tracepoint_android_vh_ufs_update_sdev
+  ufshcd_auto_hibern8_update
+  ufshcd_dme_get_attr
+  ufshcd_dme_set_attr
+  ufshcd_dump_regs
+  ufshcd_fixup_dev_quirks
+  ufshcd_get_local_unipro_ver
+  ufshcd_pltfrm_init
+  ufshcd_pltfrm_resume
+  ufshcd_pltfrm_runtime_idle
+  ufshcd_pltfrm_runtime_resume
+  ufshcd_pltfrm_runtime_suspend
+  ufshcd_pltfrm_suspend
+  ufshcd_query_attr
+  ufshcd_query_flag
+  ufshcd_remove
+  ufshcd_shutdown
+  ufshcd_uic_hibern8_enter
+  ufshcd_uic_hibern8_exit
+
+# required by usb_bam.ko
+  device_property_present
+
+# required by usb_f_diag.ko
+  refcount_dec_and_lock
+
+# required by usb_f_gsi.ko
+  dev_get_by_name
+  drain_workqueue
+  kstrtou16_from_user
+  rndis_deregister
+  rndis_free_response
+  rndis_get_next_response
+  rndis_msg_parser
+  rndis_register
+  rndis_set_host_mac
+  rndis_set_param_dev
+  rndis_set_param_medium
+  rndis_set_param_vendor
+  rndis_signal_connect
+  rndis_uninit
+  usb_composite_setup_continue
+
+# required by vendor_honor_charger.ko
+  param_set_int
+
+# required by zerohung.ko
+  mutex_lock_killable
+
+# required by zram.ko
+  bdget_disk
+  bdput
+  bio_add_page
+  bio_alloc_bioset
+  bio_associate_blkg
+  bio_chain
+  bio_endio
+  bio_init
+  bio_put
+  blk_alloc_queue
+  blk_cleanup_queue
+  blkdev_get_by_dev
+  blkdev_get_by_path
+  blkdev_put
+  blk_queue_flag_clear
+  blk_queue_flag_set
+  blk_queue_io_min
+  blk_queue_io_opt
+  blk_queue_logical_block_size
+  blk_queue_max_discard_sectors
+  blk_queue_max_write_zeroes_sectors
+  blk_queue_physical_block_size
+  blk_status_to_errno
+  __cpuhp_state_add_instance
+  __cpuhp_state_remove_instance
+  crypto_alloc_base
+  crypto_comp_compress
+  crypto_comp_decompress
+  crypto_has_alg
+  del_gendisk
+  device_add_disk
+  disk_end_io_acct
+  disk_start_io_acct
+  file_path
+  filp_close
+  filp_open_block
+  flush_dcache_page
+  fs_bio_set
+  fsync_bdev
+  kernfs_path_from_node
+  memset64
+  page_endio
+  refcount_dec_and_mutex_lock
+  register_blkdev
+  revalidate_disk_size
+  set_blocksize
+  submit_bio
+  submit_bio_wait
+  __sysfs_match_string
+  __traceiter_android_vh_mem_cgroup_alloc
+  __traceiter_android_vh_mem_cgroup_css_offline
+  __traceiter_android_vh_mem_cgroup_css_online
+  __traceiter_android_vh_mem_cgroup_free
+  __traceiter_android_vh_mem_cgroup_id_remove
+  __tracepoint_android_vh_mem_cgroup_alloc
+  __tracepoint_android_vh_mem_cgroup_css_offline
+  __tracepoint_android_vh_mem_cgroup_css_online
+  __tracepoint_android_vh_mem_cgroup_free
+  __tracepoint_android_vh_mem_cgroup_id_remove
+  unregister_blkdev
+
+# required by zsmalloc.ko
+  alloc_anon_inode
+  __ClearPageMovable
+  dec_zone_page_state
+  inc_zone_page_state
+  init_pseudo
+  iput
+  kern_mount
+  kern_unmount
+  kill_anon_super
+  page_mapping
+  __SetPageMovable
+  unlock_page
+  wait_on_page_bit
+
+
+# required by qrtr-gunyah.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qrtr-smd.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qrtr.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by cfg80211.ko
+  hn_timestamps_set_wifi_connect_status
+  set_wifi_state_disconnect
+  set_wifi_state_connect
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by snd-usb-audio-qmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by microdump.ko
+  dump_backtrace
+  kallsyms_lookup_name
+  rb_sreason_set
+  sprintf_s
+  put_task_stack
+  memset_s
+  __tracepoint_android_rvh_die_kernel_fault
+  __ubsan_handle_cfi_check_fail
+  dump_stack
+  __cfi_slowpath_diag
+
+# required by chr_misc_device.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+  sprintf_s
+
+# required by aisched.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by subsys_failure_log.ko
+  __ubsan_handle_cfi_check_fail
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+  rb_sreason_set
+  get_log_usertype
+  strncpy_s
+  memset_s
+  memcpy_s
+
+# required by honor_fas.ko
+  strncpy_s
+  kernel_read
+  snprintf_s
+  vsnprintf_s
+  memcpy_s
+  __cfi_slowpath_diag
+  memset_s
+  sscanf_s
+  sprintf_s
+  __ubsan_handle_cfi_check_fail
+
+# required by sensors_dmd.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by sensorevent.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by zerohung.ko
+  strncpy_s
+  logger_notifier_list
+  get_log_usertype
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_put_integral
+  hiview_hievent_create
+  __ubsan_handle_cfi_check_fail
+
+# required by process_mem.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rMemleak.ko
+  __ubsan_handle_cfi_check_fail
+  zs_malloc
+  zs_create_pool
+  napi_get_frags
+  __cfi_slowpath_diag
+
+# required by rBattery.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+  kallsyms_lookup_name
+
+# required by rScsi.ko
+  __ubsan_handle_cfi_check_fail
+  lookup_bdev
+  __cfi_slowpath_diag
+
+# required by rProcess.ko
+  __ubsan_handle_cfi_check_fail
+  find_pid_ns
+  __cfi_slowpath_diag
+  kill_pid
+
+# required by rmissile.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by rF2fs.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+  bdevname
+
+# required by rEmmc.ko
+  __ubsan_handle_cfi_check_fail
+  kallsyms_lookup_name
+  __cfi_slowpath_diag
+
+# required by rSd.ko
+  __ubsan_handle_cfi_check_fail
+  kallsyms_lookup_name
+  __cfi_slowpath_diag
+
+# required by rmem.ko
+  __ubsan_handle_cfi_check_fail
+  mm_trace_rss_stat
+  find_pid_ns
+  __cfi_slowpath_diag
+
+# required by rfile.ko
+  __ubsan_handle_cfi_check_fail
+  drop_super
+  get_super
+  lookup_bdev
+  __arch_clear_user
+  __cfi_slowpath_diag
+
+# required by sdio_preisp.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+  strncpy_s
+  memset_s
+
+# required by fingersense.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hteedrv_spi.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+
+# required by hteedrv_i2c.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+
+# required by tzdriver.ko
+  kernel_read
+  vfs_getattr
+  kern_path
+  vsnprintf_s
+  sprintf_s
+  hiview_hievent_report
+  hiview_hievent_destroy
+  hiview_hievent_put_integral
+  hiview_hievent_put_string
+  hiview_hievent_create
+  rb_sreason_set
+  snprintf_s
+  hievent_to_write
+  imonitor_send_event
+  imonitor_add_dynamic_path
+  imonitor_destroy_eventobj
+  imonitor_set_param
+  imonitor_create_eventobj
+  strncpy_s
+  memmove_s
+  memcpy_s
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  memset_s
+
+# required by thp.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by driver_brige.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by antenna_cable_state.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by antenna_board_detect.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dev_detect.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by hardware_detector.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by card_tray_gpio_detect.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by honor_spi_ir.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dsm_core.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_put_integral
+  hiview_hievent_create
+
+# required by stm_ftrace.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by stm_console.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by stm_p_ost.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by stm_p_basic.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by stm_core.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by coresight-hwevent.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-tgu.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-remote-etm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-dummy.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-csr.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-tpdm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-tpda.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-cti.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by coresight-stm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-replicator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-funnel.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight-tmc.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by coresight.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by slim-qcom-ngd-ctrl.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by slimbus.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by fingerprint.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_camera_pmic.ko
+  sprintf_s
+  sscanf_s
+  memset_s
+  __ubsan_handle_cfi_check_fail
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+  snprintf_s
+  strncpy_s
+
+# required by hangdetect_userpet.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+  snprintf_s
+
+# required by hangdetect_cpu.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+
+# required by ldo-hn-vibrator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by aw_haptic.ko
+  memset_s
+  sprintf_s
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+  snprintf_s
+
+# required by hn_haptics_wrapper.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  memcpy_s
+
+# required by adsp_chr.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by boxid.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dsm-audio.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ioinfo.ko
+  __ubsan_handle_cfi_check_fail
+  get_pgpress
+  find_get_pid
+  kernel_read
+  get_log_usertype
+
+# required by f_virtual_port.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hihonor_usb_glink.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by vendor_switch_usb_class.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by switch_ap.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by hw_pd.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by dubai_qcom.ko
+  dubai_log_irq_wakeup_hook
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_adc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by tcpc_manager.ko
+  __ubsan_handle_cfi_check_fail
+  memset_s
+  memcpy_s
+
+# required by adsp_usb.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by adsp_ui_event.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+
+# required by honor_charger_adsp.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  __cfi_slowpath_diag
+  memcpy_s
+
+# required by adsp_battery.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+
+# required by dc_sc_adsp_mod.ko
+  snprintf_s
+  strncpy_s
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  memcpy_s
+
+# required by adsp_fuelgauge_mod.ko
+  memcpy_s
+  __ubsan_handle_cfi_check_fail
+  memset_s
+  snprintf_s
+  __cfi_slowpath_diag
+  strncpy_s
+
+# required by adsp_dts.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+  sprintf_s
+  strncpy_s
+  snprintf_s
+  __cfi_slowpath_diag
+
+# required by honor_battery_basp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_batt_aut_checker.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_batt_info.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+  __cfi_slowpath_diag
+
+# required by honor_ds28e30.ko
+  __cfi_slowpath_diag
+  sprintf_s
+  __ubsan_handle_cfi_check_fail
+  memset_s
+  memcpy_s
+
+# required by honor_sle95250.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_battery_type_identify.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_power_proxy.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by vendor_bq27z561.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wireless_tx_auth.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wireless_tx_open_by_client.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_wireless_charger.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_coil_test.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wlc_mmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by charger_interface.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_hihonor_charger_glink.ko
+  __cfi_slowpath_diag
+  strncpy_s
+  snprintf_s
+  memcpy_s
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_charger_adaptor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_charger_common.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_qcom_usb_temp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_pmic_ocp_debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_fuelguage.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_honor_charger.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by charge_dmd_monitor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by multi_ic_check.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_platform.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by uscp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_power_genl.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_nv.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hihonor_fg_glink.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hihonor_oem_glink.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by hw_usb_handle_pcinfo.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hw_usb_sync_host_time.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hw_usb_rwswitch.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_wireless_tx_alarm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_wireless_tx_protection.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_wireless_tx_chrg_curve.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wireless_tx_volt_check.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_dc_cp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wireless_rx_alarm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by wireless_rx_ic_intf.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_wireless_test_hw.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_charge_pump_test.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_wireless_power_supply.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by direct_charge_mmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_para_parse.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_path_switch.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_adapter.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_uevent.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_cable.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by direct_charge_debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_power_supply.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_direct_charge_calibration.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_comp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_error_handle.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by direct_charge_ic_manager.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_battery_core.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_battery_leakage.ko
+  __ubsan_handle_cfi_check_fail
+  sprintf_s
+  __cfi_slowpath_diag
+  memset_s
+
+# required by honor_multi_btb_temp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_battery_temp.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_battery_soh.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_battery_fault.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by battery_ui_capacity.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_battery_model.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_fw.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by vbus_channel_pogopin_boost.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vbus_channel_boost_gpio.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vbus_channel_charger.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by vbus_channel_error_handle.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vbus_channel.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wired_channel_switch.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_water_check.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_smpl.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_soc_decimal.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_btb_check.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_bat_heating.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_soc_control.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by honor_water_detect.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by honor_vbus_monitor.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ds_eeprom.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rt9426a_battery.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rt9426.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cw2217_fuel_gauge.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_wireless_mt5785.ko
+  __cfi_slowpath_diag
+  strncpy_s
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_wireless_cps4067.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_wireless_stwlc88.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by vendor_wireless_cps4057.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by boost_5v.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by sc8562.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  memcpy_s
+  memset_s
+
+# required by aw32280.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rt9759_sc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by bq25970.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+  memset_s
+
+# required by hl1512.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pca9488.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by charge_pump.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by max77813.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by tps63810.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by buck_boost.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by coul_fusion.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coul_calibration.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by coul_test.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by coul_interface.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_protocol_qi.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_protocol.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wireless_protocol_sysfs.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by adapter_protocol_scp.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by adapter_protocol_fcp.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by adapter_protocol.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by adapter_protocol_sysfs.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_thermalzone.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_devices_info.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_debug.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_dsm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_bigdata.ko
+  __ubsan_handle_cfi_check_fail
+  imonitor_destroy_eventobj
+  imonitor_send_event
+  imonitor_create_eventobj
+  __cfi_slowpath_diag
+  imonitor_set_param_string_v2
+  imonitor_set_param_integer_v2
+
+# required by power_nvm.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  memcpy_s
+
+# required by honor_power_os_ability.ko
+  memset_s
+  __ubsan_handle_cfi_check_fail
+
+# required by power_compensation.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_delay.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by vendor_power_supply.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_calibration.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_test.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_log.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_temp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_event.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_vote.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_platform_interface.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by power_interface.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  sprintf_s
+  memset_s
+
+# required by power_ui.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_sysfs.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_gpio.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_i2c.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_dts.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_cmdline.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by power_algorithm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by icc-debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qnoc-qos.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qnoc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qnoc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by icc-rpmh.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by icc-bcm-voter.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by icc-test.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by nvmem_qcom-spmi-sdam.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by nvmem_qfprom.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-vadc-common.ko
+  __ubsan_handle_cfi_check_fail
+  get_log_usertype
+  __cfi_slowpath_diag
+
+# required by qcom-spmi-adc5.ko
+  __ubsan_handle_cfi_check_fail
+  get_log_usertype
+  __cfi_slowpath_diag
+
+# required by gh_virtio_backend.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gh_virt_wdt.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gh_mem_notifier.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gh_irq_lend.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gh_dbl.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gh_rm_drv.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gh_msgq.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gh_ctrl.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_smd.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_glink_smem.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_glink.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_sysmon.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+
+# required by qcom_esoc.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_q6v5_pas.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+  get_log_usertype
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+
+# required by qcom_q6v5_adsp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_q6v5.ko
+  __ubsan_handle_cfi_check_fail
+  rb_attach_info_set
+  rb_sreason_set
+  __cfi_slowpath_diag
+
+# required by rproc_qcom_common.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+  __cfi_slowpath_diag
+
+# required by qcom_pil_info.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_hwspinlock.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_qmp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by sps_drv.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by usb_bam.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by msm-geni-se.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ipa_fmwk.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by rcc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcedev-mod.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qce50.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by tz_log.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-scm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by shared_rail_vendor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by cpufreq_stats_vendor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by plh_vendor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pmu_vendor.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by leds-qpnp-vibrator-ldo.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by leds-qpnp-flash-v2.ko
+  __ubsan_handle_cfi_check_fail
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+  strncpy_s
+  memset_s
+  snprintf_s
+
+# required by leds-qti-tri-led.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cqhci.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by sdhci-msm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by dsm_sdcard.ko
+  __tracepoint_android_vh_mmc_attach_sd
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  memset_s
+
+# required by qcom_lpm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom-cpufreq-hw-debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-cpufreq-hw.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by device_feature.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by bt_fm_slim.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by btpower.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by btdsm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hn_cpu_cooling.ko
+  __ubsan_handle_cfi_check_fail
+  strncpy_s
+
+# required by hn_shell_temp.ko
+  snprintf_s
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_devfreq_cdev.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_cpufreq_cdev.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_userspace_cdev.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ddr_cdev.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by sdpm_clk.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by policy_engine.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by bcl_soc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by bcl_pmic5.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cpu_hotplug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by thermal_pause.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_qmi_cdev.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_qmi_sensor_v2.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti-adc-tm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom-spmi-temp-alarm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_tsens.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by hw_kpwd.ko
+  __ubsan_handle_cfi_check_fail
+  profile_event_unregister
+  profile_event_register
+
+# required by hw_kpg.ko
+  __ubsan_handle_cfi_check_fail
+  check_binder_calling_work
+  simple_strtol
+  wake_unlock_all
+  wake_unlock_by_name
+  wakeup_source_set_all
+  wakeup_source_set
+  kstate_exempt_async_invocation_cb_hook
+
+# required by hw_procnetstat.ko
+  __ubsan_handle_cfi_check_fail
+  udp6_lib_lookup_skb
+  udp4_lib_lookup_skb
+  snprintf_s
+  profile_event_unregister
+  profile_event_register
+  memset_s
+
+# required by hw_kcollect.ko
+  __ubsan_handle_cfi_check_fail
+  kstate_kill_cb_hook
+  kstate_binder_cb_hook
+
+# required by hw_kstate.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by dubai_common.ko
+  sock_create
+  wakeup_source_getlastingname
+  get_log_usertype
+  dubai_update_suspend_abort_reason_hook
+  dubai_set_rtc_timer_hook
+  hievent_to_write
+  dubai_log_binder_stats_hook
+  dubai_log_kworker_hook
+  dubai_log_uevent_hook
+  core_power
+  task_cputime_adjusted
+  profile_event_unregister
+  profile_event_register
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_battery_charger.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+
+# required by reboot-mode.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom-reboot-reason.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-pon.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-dload-mode.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by radio-i2c-rtc6226-qca.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by synx-driver.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_ipc_lite.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by i2c-msm-geni.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by rtc-pm8xxx.ko
+  __ubsan_handle_cfi_check_fail
+  vfs_fsync
+  kernel_write
+  vfs_llseek
+  __cfi_slowpath_diag
+
+# required by qpnp-power-on.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pm8941-pwrkey.ko
+  __ubsan_handle_cfi_check_fail
+  bootfail_pwk_release
+  bootfail_pwk_press
+
+# required by goodix_core.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by nt36xxx-spi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by nt36xxx-i2c.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by focaltech_fts.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by ucsi_glink.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by f_fs_ipc_log.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by usb_f_gsi.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by usb_f_cdev.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by usb_f_ccid.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by usb_f_qdss.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by usb_f_diag.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by lvstest.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by ehset.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dwc3-msm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by phy-msm-snps-hs.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-msm-ssusb-qmp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-emu.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-generic.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_sharedmem.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cnss_prealloc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cnss_nl.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by wlan_firmware_service.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cnss_utils.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by spmi-glink-debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by spmi-pmic-arb-debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by spmi-pmic-arb.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by spi-msm-geni.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by sg.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by ufshcd-crypto-qti.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ufs_honor.ko
+  __cfi_slowpath_diag
+  __tracepoint_android_vh_timerfd_create
+  __ubsan_handle_cfi_check_fail
+
+# required by ufs_qcom.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_dma_heaps.ko
+  alloc_hugepage
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by snxxx.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pn547.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  memset_s
+  __cfi_slowpath_diag
+
+# required by qcom-spmi-pmic.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-i2c-pmic.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qseecom-mod.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hdcp_qseecom.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qti-regmap-debugfs.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by regmap-spmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_kgsl.ko
+  __tracepoint_mm_alloc_time
+  alloc_time_settions
+  mm_kobj
+  gpu_alloc_stat
+  __traceiter_mm_alloc_time
+  mem_alloc_report
+  __ubsan_handle_cfi_check_fail
+  send_memory_report
+  __cfi_slowpath_diag
+
+# required by qcom_iommu_debug.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by iommu-logger.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_iommu_util.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by msm_dma_iommu_mapping.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by arm_smmu.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+  __cfi_slowpath_diag
+
+# required by rdbg.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by frpc-adsprpc.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by msm_rng.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_geni_serial.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by hvc_gunyah.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cam_buckboost.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cam_buck.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by debug-regulator.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by stub-regulator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rpmh-regulator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qpnp-lcdb-regulator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_pm8008-regulator.ko
+  __ubsan_handle_cfi_check_fail
+  snprintf_s
+  hiview_hievent_destroy
+  hiview_hievent_report
+  hiview_hievent_put_string
+  hiview_hievent_create
+  strncpy_s
+  memset_s
+
+# required by proxy-consumer.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti-fixed-regulator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qfprom-sys.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hung_task_enh.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by tmecom-intf.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dmesg_dumper.ko
+  __ubsan_handle_cfi_check_fail
+  memset_s
+
+# required by panel_event_notifier.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_logbuf_vendor_hooks.ko
+  __ubsan_handle_cfi_check_fail
+  rb_kernel_log_record
+
+# required by qcom_cpu_vendor_hooks.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cpufreq_stats_scmi.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pmu_scmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by bwmon.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by memlat.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom-dcvs.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by dcvs_fp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom-pmu-lib.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qdss_bridge.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by shared_rail_scmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by plh_scmi.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by rimps_log.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by icnss2.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by msm_ext_display.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by sys_pm_vx.ko
+  __ubsan_handle_cfi_check_fail
+  hievent_to_write
+
+# required by qcom_soc_wdt.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_wdt_core.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+  rb_mreason_set
+  __cfi_slowpath_diag
+
+# required by crypto-qti-hwkm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hwkm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by crypto-qti-common.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by hyp_core_ctl.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by guestvm_loader.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by eud.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_show_epoch.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by fsa4480-i2c.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cdsprm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qpnp-pbs.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_performance.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pmic-pon-log.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by altmode-glink.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by charger-ulog-glink.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qti_battery_debug.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pmic_glink.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by glink_probe.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by glink_pkt.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by smp2p_sleepstatemodem.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by smp2p_sleepstate.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by microdump_collector.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by smcinvoke_mod.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by dcc_v2.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by memory_dump_v2.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by mem_buf_dev.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by mem_buf.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by mem-offline.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by minidump.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by rq_stats.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_rimps.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_ipcc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by soc_sleep_stats.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by socinfo.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by mem-hooks.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by secure_buffer.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by core_hang_detect.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by sysmon_subsystem_stats.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by subsystem_sleep_stats.ko
+  __ubsan_handle_cfi_check_fail
+  hievent_to_write
+
+# required by smp2p.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by app_info.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by ddr_info.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by smem.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by boot_stats.ko
+  __ubsan_handle_cfi_check_fail
+  get_uefi_time
+
+# required by rpmh_master_stat.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_rpmh.ko
+  __ubsan_handle_cfi_check_fail
+  rb_sreason_set
+
+# required by msm_memshare.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by heap_mem_ext_v01.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qmi_helpers.ko
+  __cfi_slowpath_diag
+  __ubsan_handle_cfi_check_fail
+
+# required by pdr_interface.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_ramdump.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cdsp-loader.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by mdt_loader.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_cpuss_sleep_stats.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by cmd-db.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by qcom_aoss.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dp_cust_dlkm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by usb_analog_hs_mos.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by usb_analog_hs.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by gpi.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by bam_dma.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by clk-spmi-pmic-div.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by videocc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gpucc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gpucc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gcc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gcc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dispcc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by dispcc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by debugcc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by debugcc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by camcc-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by camcc-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by clk-rpmh.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by gdsc-regulator.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by clk-dummy.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by clk-qcom.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pci-msm-drv.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by pwm-qti-lpg.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pinctrl-spmi-mpp.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pinctrl-spmi-gpio.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pinctrl-ravelin.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pinctrl-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by pinctrl-msm.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by phy-qcom-ufs-qrbtc-sdm845.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-14nm.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v3.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-anarok.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-parrot.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-cape.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-diwali.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-waipio.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs-qmp-v4-lahaina.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by phy-qcom-ufs.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by mhi_dev_dtr.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by mhi_dev_netdev.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by mhi_dev_uci.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by mhi.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom-pdc.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by msm_show_resume_irq.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by xodata.ko
+  __ubsan_handle_cfi_check_fail
+  memcpy_s
+
+# required by lmkd_dbg.ko
+  __ubsan_handle_cfi_check_fail
+  show_mem
+
+# required by meminfo_lite.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by fmps.ko
+  __ubsan_handle_cfi_check_fail
+  page_cache_ra_unbounded
+  mark_page_accessed
+  pagevec_lookup_range
+  kernel_read
+  kernel_write
+  __bitmap_weight
+  _vm_normal_page
+  pmd_clear_bad
+  __split_huge_pmd
+  walk_page_vma
+  bitmap_zalloc
+  bitmap_free
+  __sys_setresuid
+  __cfi_slowpath_diag
+  down_write_trylock
+  down_read_trylock
+
+# required by honor_hung_task.ko
+  __ubsan_handle_cfi_check_fail
+  strncpy_s
+  rb_sreason_set
+  hievent_to_jank
+
+# required by msm_sysstats.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by qcom_ipc_logging.ko
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+
+# required by cpu-netlink.ko
+  sscanf_s
+  snprintf_s
+  vsnprintf_s
+  memset_s
+  jiffies64_to_nsecs
+  __tracepoint_android_vh_honor_check_vip_status
+  __ubsan_handle_cfi_check_fail
+
+# required by sched-hn.ko
+  __ubsan_handle_cfi_check_fail
+
+# required by sched-walt.ko
+  __tracepoint_android_vh_honor_futex_vip_unset
+  __tracepoint_android_vh_honor_futex_vip_set
+  __tracepoint_android_rvh_honor_test_task_vip
+  __tracepoint_android_rvh_honor_test_task_vip_depth
+  __tracepoint_android_rvh_honor_dynamic_vip_enqueue
+  __tracepoint_android_rvh_honor_dynamic_vip_dequeue
+  __tracepoint_android_rvh_honor_test_dynamic_vip
+  __tracepoint_android_rvh_honor_static_vip_set
+  __tracepoint_android_rvh_honor_check_task_static_vip
+  __tracepoint_android_rvh_hn_get_task_tags
+  __tracepoint_android_rvh_init_cfs_rq_runtime
+  __tracepoint_android_rvh_cfs_bw_dequeue_task_fair
+  __tracepoint_android_rvh_cfs_bw_enqueue_task_fair
+  __tracepoint_android_rvh_unthrottle_cfs_rq
+  __tracepoint_android_rvh_throttle_cfs_rq
+  sysctl_sched_migration_cost
+  enable_vip_page_cache
+  update_top_uids
+  __tracepoint_android_rvh_walt_uclamp_task_util
+  __tracepoint_android_rvh_walt_task_util
+  __tracepoint_android_rvh_get_walt_ravg_sum
+  __tracepoint_android_rvh_sched_get_all_rtg_groups_info
+  __tracepoint_android_rvh_sched_get_rtg_group_debug_info
+  __tracepoint_android_rvh_sched_get_rtg_group_thread_num
+  __tracepoint_android_rvh_sched_set_group_id
+  __tracepoint_android_rvh_sched_honor_task_fits_capacity
+  __tracepoint_android_rvh_sched_honor_uclamp_task_util
+  __tracepoint_android_rvh_sched_honor_capacity_of
+  __tracepoint_android_rvh_sched_honor_capacity_curr_of
+  __tracepoint_android_rvh_sched_get_group_id
+  __ubsan_handle_cfi_check_fail
+  __cfi_slowpath_diag
+  cfs_bandwidth_used
+
+# required by gh_arm_drv.ko
+  __ubsan_handle_cfi_check_fail
+  
+
+# required by mac80211.ko
+  prandom_bytes
+  netdev_info
+  round_jiffies_up
+  crc32_be
+  skb_ensure_writable
+  skb_clone_sk
+  __skb_gso_segment
+  __skb_get_hash
+  skb_checksum_help
+  skb_copy_expand
+  dev_queue_xmit
+  napi_gro_receive
+  netif_receive_skb_list
+  ethtool_op_get_link
+  skb_copy
+  __crypto_xor
+  crypto_shash_digest
+  crypto_shash_setkey
+  crypto_shash_finup
+  kernel_param_unlock
+  kernel_param_lock
+  __hw_addr_unsync
+  netif_tx_stop_all_queues
+  dev_fetch_sw_netstats
+  eth_mac_addr
+  __hw_addr_sync
+  unregister_netdevice_many
+  unregister_netdevice_queue
+  register_netdevice
+  netdev_set_default_ethtool_ops
+  dev_alloc_name
+  netif_carrier_on
+  netif_carrier_off
+  net_ratelimit
+  call_rcu
+  round_jiffies_relative
+  pskb_expand_head
+  __crypto_memneq
+  crypto_aead_setauthsize
+  crypto_aead_setkey
+  crypto_alloc_aead
+  crypto_aead_decrypt
+  crypto_aead_encrypt
+  ___pskb_trim
+  arc4_crypt
+  arc4_setkey
+  rhashtable_free_and_destroy
+  __rht_bucket_nested
+  rht_bucket_nested_insert
+  rhashtable_insert_slow
+  __local_bh_enable_ip
+  rht_bucket_nested
+  rhltable_init
+  ktime_get_seconds
+  __alloc_percpu_gfp
+  __dev_kfree_skb_any
+  skb_complete_wifi_ack
+  kfree_skb_list
+  round_jiffies
+  netif_rx
+  rcu_barrier
+  unregister_inet6addr_notifier
+  unregister_inetaddr_notifier
+  register_inet6addr_notifier
+  register_inetaddr_notifier
+  dev_printk
+  __hw_addr_init
+
+# required by rootscan.ko
+  set_hash_error_file_path
+  rscan_dynamic_raw_and_upload
+  rscan_get_status
+  rscan_dynamic_raw
+  load_rproc_whitelist
+  get_ro_secure
+  set_root_agent_ready
+  set_send_eima_func
+
+# required by tpkits.ko
+  i2c_unregister_device
+  i2c_new_client_device
+  i2c_get_adapter
+
+# required by sec_monitor_mod.ko
+  netlink_kernel_release
+
+# required by mhi_dev_net.ko
+  netif_rx
+
+# required by mhi_dev_drv.ko
+  kstrtos8
+  device_set_wakeup_capable
+
+# required by leds-qti-flash.ko
+  led_classdev_flash_register_ext
+  led_classdev_flash_unregister
+
+# required by qcom_edac.ko
+  edac_device_handle_ue_count
+  edac_device_handle_ce_count
+  edac_device_free_ctl_info
+  edac_device_del_device
+  edac_device_add_device
+  edac_device_alloc_index
+  edac_device_alloc_ctl_info
+
+# required by kryo_arm64_edac.ko
+  on_each_cpu
+  edac_device_handle_ue_count
+  edac_device_handle_ce_count
+  edac_device_free_ctl_info
+  edac_device_del_device
+  edac_device_add_device
+  edac_device_alloc_index
+  edac_device_alloc_ctl_info
+
+# required by hn_shell_temp.ko
+  system_freezable_power_efficient_wq
+  round_jiffies
+  get_cpu_idle_time
+  cpufreq_quick_get
+
+# required by cpu_voltage_cooling.ko
+  dev_pm_opp_find_freq_ceil
+
+# required by msm_lmh_dcvs.ko
+  dev_pm_opp_find_freq_ceil
+
+# required by i3c-master-msm-geni.ko
+  i3c_master_unregister
+  i3c_master_do_daa
+  i3c_generic_ibi_recycle_slot
+  i3c_master_disec_locked
+  i3c_generic_ibi_free_pool
+  i3c_generic_ibi_alloc_pool
+  i3c_master_enec_locked
+  i3c_master_add_i3c_dev_locked
+  i3c_master_entdaa_locked
+  i3c_master_set_info
+  i3c_master_get_free_addr
+  i3c_master_queue_ibi
+  i3c_generic_ibi_get_free_slot
+  i3c_master_register
+
+# required by hn-qcom-hv-haptics.ko
+  devm_nvmem_cell_get
+
+# required by pm8941-pwrkey.ko
+  rtc_set_alarm
+  rtc_read_alarm
+  rtc_read_time
+  rtc_class_close
+
+# required by atmel_mxt_ts.ko
+  input_alloc_absinfo
+  kmemdup_nul
+  desc_to_gpio
+  input_mt_report_pointer_emulation
+  gpiod_set_value
+
+# required by repeater-i2c-eusb2.ko
+  devm_regulator_put
+  devm_gpiod_put
+
+# required by cnss2.ko
+  cma_get_name
+  devm_clk_put
+  devm_regulator_put
+  pci_alloc_irq_vectors_affinity
+  pci_free_irq_vectors
+  pci_release_region
+  pci_iomap
+  pci_request_region
+  pci_assign_resource
+  pci_unregister_driver
+  pci_irq_vector
+  pci_dev_present
+  pci_set_power_state
+  pci_disable_device
+  pci_clear_master
+  wait_for_completion_killable
+
+# required by lt9611uxc.ko
+  drm_bridge_remove
+  mipi_dsi_detach
+  drm_mode_copy
+  drm_mode_probed_add
+  drm_mode_duplicate
+  drm_add_edid_modes
+  drm_connector_update_edid_property
+  drm_do_get_edid
+  drm_atomic_helper_connector_destroy_state
+  drm_atomic_helper_connector_duplicate_state
+  drm_connector_cleanup
+  drm_helper_probe_single_connector_modes
+  drm_atomic_helper_connector_reset
+  mipi_dsi_device_unregister
+  mipi_dsi_attach
+  mipi_dsi_device_register_full
+  of_find_mipi_dsi_host_by_node
+  drm_connector_attach_encoder
+  drm_connector_register
+  drm_connector_init
+  __drm_err
+  drm_mode_vrefresh
+  drm_mode_set_name
+  of_graph_get_remote_port_parent
+  of_graph_get_endpoint_by_regs
+  drm_bridge_add
+  drm_get_connector_status_name
+
+# required by spss_utils.ko
+  kernel_restart
+
+# required by sensors_ssc.ko
+  rproc_set_firmware
+
+# required by llcc-qcom.ko
+  devm_platform_ioremap_resource_byname
+
+# required by qcom_gic_intr_routing.ko
+  __tracepoint_irq_handler_entry
+  __tracepoint_android_rvh_gic_v3_set_affinity
+  __bitmap_andnot
+  irq_do_set_affinity
+
+# required by mhi_cntrl_qcom.ko
+  pci_set_power_state
+  pci_unregister_driver
+  pci_alloc_irq_vectors_affinity
+  pci_irq_vector
+  pci_request_region
+  pci_assign_resource
+  pci_disable_device
+  pci_release_region
+  pci_clear_master
+  pci_free_irq_vectors
+
+
+# required by rmnet_sch.ko
+  unregister_qdisc
+  register_qdisc
+
+# required by rmnet_wlan.ko
+  ipv6_stub
+  neigh_destroy
+  ip_route_output_flow
+  xfrm_lookup
+  dst_release
+  neigh_resolve_output
+  ipv6_ext_hdr
+  param_ops_ullong
+  in4_pton
+  in6_pton
+  dev_get_by_name_rcu
+  netdev_rx_handler_register
+  netdev_rx_handler_unregister
+  ipv6_skip_exthdr
+
+# required by rmnet_core.ko
+  rtnl_unicast
+  trace_print_hex_seq
+  rtnl_trylock
+  gro_cells_destroy
+  gro_cells_init
+  build_skb
+  ip_compute_csum
+  skb_append_pagefrags
+  csum_partial
+  csum_tcpudp_nofold
+  skb_checksum
+  netif_schedule_queue
+  ipv6_ext_hdr
+  csum_ipv6_magic
+  ipv6_skip_exthdr
+  ktime_get_raw
+  gro_cells_receive
+  rtnl_link_unregister
+  rtnl_link_register
+  __ipv6_addr_type
+  netdev_rx_handler_unregister
+  netdev_rx_handler_register
+
+# required by adrastea.ko
+  pci_write_config_word
+  init_dummy_netdev
+  cpufreq_quick_get_max
+  debugfs_create_blob
+  debugfs_create_u64
+  debugfs_create_u16
+  seq_hex_dump
+  seq_vprintf
+  schedule_timeout_interruptible
+  skb_coalesce_rx_frag
+  debugfs_create_atomic_t
+  aes_encrypt
+  aes_expandkey
+  complete_and_exit
+  nla_strlcpy
+  unregister_netevent_notifier
+  register_netevent_notifier
+  vprintk
+  napi_gro_flush
+  __ipv6_addr_type
+  param_set_copystring
+  param_get_string
+  netdev_update_features
+  rtnl_trylock
+  mac_pton
+  hex_to_bin
+  strchrnul
+  netif_schedule_queue
+  hex2bin
+  wireless_send_event
+
+# required by qca6750.ko
+  pci_write_config_word
+  cpufreq_quick_get_max
+  csum_tcpudp_nofold
+  init_dummy_netdev
+  debugfs_create_blob
+  debugfs_create_u64
+  debugfs_create_u16
+  seq_hex_dump
+  seq_vprintf
+  schedule_timeout_interruptible
+  skb_coalesce_rx_frag
+  debugfs_create_atomic_t
+  aes_encrypt
+  aes_expandkey
+  complete_and_exit
+  nla_strlcpy
+  unregister_netevent_notifier
+  register_netevent_notifier
+  vprintk
+  napi_gro_flush
+  __ipv6_addr_type
+  param_set_copystring
+  param_get_string
+  netdev_update_features
+  rtnl_trylock
+  mac_pton
+  hex_to_bin
+  strchrnul
+  netif_schedule_queue
+  hex2bin
+  wireless_send_event
+
+# required by rmnet_offload.ko
+  param_get_ullong
+
+# required by rmnet_shs.ko
+  param_ops_ulong
+  get_zeroed_page
+  proc_set_user
+  softnet_data
+  unregister_oom_notifier
+  register_oom_notifier
+  skb_dequeue_tail
+
+# required by msm_video.ko
+  v4l2_ctrl_new_std
+  v4l2_ctrl_new_std_menu
+  v4l2_ctrl_new_custom
+  v4l2_ctrl_handler_init_class
+  vb2_queue_init
+  vb2_queue_release
+  v4l2_fh_exit
+  v4l2_fh_del
+  v4l2_fh_add
+  v4l2_fh_init
+  v4l2_event_queue_fh
+  v4l2_event_dequeue
+  v4l2_event_unsubscribe
+  v4l2_event_subscribe
+  vb2_streamoff
+  vb2_streamon
+  vb2_dqbuf
+  vb2_qbuf
+  vb2_reqbufs
+  v4l2_s_ctrl
+  v4l2_ctrl_find
+  v4l2_event_pending
+  vb2_buffer_done
+
+# required by camera.ko
+  strcat_s
+  led_trigger_event
+  led_trigger_unregister_simple
+  led_trigger_register_simple
+  of_property_read_u64
+  i2c_bus_type
+  iommu_dma_reserve_iova
+  gpio_free_array
+  of_clk_get_from_provider
+  __release_region
+  __request_region
+  dma_buf_get_flags
+  v4l2_subdev_call_wrappers
+  media_device_cleanup
+  media_device_unregister
+  v4l2_event_unsubscribe
+  v4l2_event_subscribe
+  v4l2_fh_release
+  v4l2_fh_open
+  v4l2_event_pending
+  media_entity_pads_init
+  video_device_alloc
+  __media_device_register
+  media_device_init
+  __v4l2_device_register_subdev_nodes
+  v4l2_device_unregister_subdev
+  v4l2_device_register_subdev
+  v4l2_subdev_init
+  video_device_release
+  v4l2_event_queue
+
+# required by tmf882x_dtof.ko
+  __wake_up_sync
+  gpiod_get_direction
+  __kfifo_out_peek
+  sysfs_remove_groups
+  sysfs_create_groups
+
+# required by hwcam_cfg.ko
+  v4l2_event_unsubscribe
+  v4l2_event_subscribe
+  v4l2_fh_release
+  v4l2_fh_open
+  v4l2_event_pending
+  video_device_release
+  video_device_alloc
+  driver_create_file
+  v4l2_event_queue_fh
+
+# required by thp.ko
+  regulator_sync_voltage
+
+# required by msm_drm.ko
+  drm_property_blob_get
+  drm_gem_mmap_obj
+  dma_resv_init
+  drm_gem_object_init
+  nsecs_to_jiffies
+  unmap_mapping_range
+  drm_mm_remove_node
+  drm_gem_put_pages
+  drm_gem_create_mmap_offset
+  drm_mm_insert_node_in_range
+  drm_prime_pages_to_sg
+  drm_gem_get_pages
+  drm_gem_object_put_locked
+  dma_buf_get_flags
+  drm_gem_private_object_init
+  drm_gem_handle_create
+  drm_gem_object_release
+  dma_resv_fini
+  drm_prime_gem_destroy
+  dma_resv_wait_timeout_rcu
+  invalidate_mapping_pages
+  shmem_truncate_range
+  drm_gem_free_mmap_offset
+  vmf_insert_mixed
+  drm_gem_mmap
+  vm_get_page_prot
+  drm_mm_takedown
+  drm_irq_uninstall
+  drm_atomic_helper_shutdown
+  drm_dev_unregister
+  drm_mode_config_cleanup
+  drm_kms_helper_poll_fini
+  drm_mm_init
+  drm_kms_helper_poll_init
+  drm_client_register
+  drm_client_init
+  drm_dev_register
+  drm_irq_install
+  drm_crtc_vblank_reset
+  drm_vblank_init
+  drm_of_component_match_add
+  drm_release
+  drm_is_current_master
+  drm_open
+  drm_compat_ioctl
+  drm_ioctl
+  drm_poll
+  drm_read
+  drm_gem_vm_close
+  drm_gem_vm_open
+  drm_client_modeset_commit_locked
+  drm_gem_prime_export
+  drm_gem_prime_fd_to_handle
+  drm_gem_prime_handle_to_fd
+  drmm_mode_config_init
+  drm_dev_put
+  drm_dev_alloc
+  drm_send_event_locked
+  drm_event_reserve_init_locked
+  drm_atomic_helper_dirtyfb
+  drm_gem_fb_create_handle
+  drm_gem_fb_destroy
+  drm_framebuffer_init
+  drm_helper_mode_fill_fb_struct
+  drm_gem_object_lookup
+  drm_gem_fb_get_obj
+  __wake_up_locked
+  drm_bridge_chain_enable
+  drm_bridge_chain_pre_enable
+  drm_crtc_wait_one_vblank
+  drm_atomic_helper_wait_for_fences
+  drm_bridge_chain_post_disable
+  drm_bridge_chain_disable
+  drm_atomic_helper_commit_hw_done
+  drm_atomic_helper_wait_for_vblanks
+  drm_atomic_helper_commit_modeset_enables
+  drm_atomic_helper_commit_planes
+  drm_atomic_helper_commit_modeset_disables
+  drm_atomic_state_default_release
+  drm_atomic_state_default_clear
+  drm_atomic_state_init
+  drm_atomic_helper_swap_state
+  do_wait_intr
+  drm_modeset_lock
+  drm_atomic_helper_prepare_planes
+  drm_atomic_set_fence_for_plane
+  drm_atomic_helper_update_legacy_modeset_state
+  strreplace
+  down_trylock
+  i2c_put_adapter
+  i2c_recover_bus
+  devm_pwm_put
+  backlight_device_get_by_type
+  pwm_apply_state
+  mipi_dsi_dcs_set_display_brightness
+  mipi_dsi_dcs_read
+  mipi_dsi_dcs_write
+  drm_panel_remove
+  drm_panel_add
+  drm_panel_init
+  backlight_device_set_brightness
+  mipi_dsi_dcs_set_tear_off
+  mipi_dsi_host_unregister
+  mipi_dsi_host_register
+  of_graph_get_remote_node
+  pgpress_invoke_fps_chg_callback
+  of_drm_find_bridge
+  mipi_dsi_create_packet
+  of_property_read_u64
+  drm_dev_dbg
+  drm_get_format_info
+  drm_gem_object_free
+  drm_framebuffer_remove
+  drm_framebuffer_unregister_private
+  drm_helper_hpd_irq_event
+  drm_add_modes_noedid
+  drm_mode_convert_umode
+  drm_mode_create
+  dma_fence_signal_timestamp_locked
+  drm_get_edid
+  drm_detect_hdmi_monitor
+  tracing_off
+  drm_property_create_bitmask
+  drm_property_create_enum
+  drm_property_create_range
+  drm_property_create
+  drm_property_lookup_blob
+  drm_object_property_set_value
+  drm_property_create_blob
+  backlight_device_register
+  __drm_atomic_helper_connector_destroy_state
+  drm_mode_object_get
+  __drm_atomic_helper_connector_duplicate_state
+  __drm_atomic_helper_connector_reset
+  drm_connector_unregister
+  backlight_device_unregister
+  drm_plane_create_rotation_property
+  drm_rotation_simplify
+  debugfs_create_x64
+  __drm_atomic_helper_plane_duplicate_state
+  drm_plane_cleanup
+  drm_atomic_helper_disable_plane
+  drm_atomic_helper_update_plane
+  drm_format_info
+  drm_universal_plane_init
+  drm_mode_equal
+  drm_atomic_set_mode_for_crtc
+  drm_kms_helper_poll_enable
+  drm_atomic_helper_commit_duplicated_state
+  drm_mode_config_reset
+  drm_atomic_helper_duplicate_state
+  drm_kms_helper_poll_disable
+  __drm_atomic_state_free
+  drm_atomic_set_crtc_for_connector
+  drm_atomic_get_connector_state
+  drm_atomic_get_crtc_state
+  drm_atomic_set_fb_for_plane
+  drm_atomic_set_crtc_for_plane
+  drm_atomic_get_plane_state
+  drm_atomic_commit
+  drm_modeset_acquire_fini
+  drm_modeset_drop_locks
+  drm_atomic_state_clear
+  drm_atomic_state_alloc
+  drm_modeset_backoff
+  drm_modeset_lock_all_ctx
+  drm_modeset_acquire_init
+  drm_atomic_helper_check
+  drm_atomic_helper_cleanup_planes
+  adjust_managed_page_count
+  memblock_free
+  of_genpd_add_provider_simple
+  bpf_trace_run11
+  irq_domain_xlate_onecell
+  drm_dev_printk
+  drm_mode_set_crtcinfo
+  drm_mode_match
+  drm_wait_one_vblank
+  kthread_mod_delayed_work
+  drm_bridge_chain_mode_set
+  drm_set_preferred_mode
+  drm_encoder_init
+  drm_encoder_cleanup
+  kernfs_find_and_get_ns
+  drm_crtc_vblank_on
+  drm_crtc_set_max_vblank_count
+  drm_mode_debug_printmodeline
+  drm_crtc_vblank_off
+  __drm_atomic_helper_crtc_destroy_state
+  __drm_atomic_helper_crtc_duplicate_state
+  kernfs_put
+  drm_property_blob_put
+  drm_atomic_helper_page_flip
+  drm_atomic_helper_set_config
+  drm_framebuffer_lookup
+  drm_crtc_handle_vblank
+  kernfs_notify
+  device_create_with_groups
+  kthread_delayed_work_timer_fn
+  drm_crtc_cleanup
+  drm_crtc_init_with_planes
+  kthread_queue_delayed_work
+  kthread_cancel_delayed_work_sync
+  drm_crtc_send_vblank_event
+  drm_dp_mst_get_port_malloc
+  drm_modeset_unlock_all
+  drm_modeset_lock_all
+  drm_dp_mst_detect_port
+  drm_dp_calc_pbn_mode
+  drm_dp_mst_deallocate_vcpi
+  drm_dp_mst_reset_vcpi_slots
+  drm_dp_atomic_release_vcpi_slots
+  drm_dp_mst_topology_mgr_set_mst
+  drm_dp_mst_get_edid
+  drm_dp_update_payload_part2
+  drm_dp_check_act_status
+  drm_dp_update_payload_part1
+  drm_dp_mst_allocate_vcpi
+  drm_dp_atomic_find_vcpi_slots
+  drm_dp_find_vcpi_slots
+  drm_dp_mst_hpd_irq
+  drm_dp_mst_put_port_malloc
+  drm_edid_duplicate
+  __drm_atomic_helper_private_obj_duplicate_state
+  drm_dp_send_power_updown_phy
+  drm_atomic_get_private_obj_state
+  drm_dp_mst_topology_mgr_destroy
+  drm_dp_mst_topology_mgr_init
+  drm_atomic_private_obj_init
+  of_clk_src_onecell_get
+  clk_register
+  drm_object_attach_property
+  drm_mode_create_dp_colorspace_property
+  drm_bridge_attach
+  devm_usb_get_phy_by_phandle
+  work_busy
+  debugfs_create_symlink
+  debugfs_create_ulong
+  drm_kms_helper_hotplug_event
+  drm_mode_object_put
+  drm_mode_object_find
+  drm_connector_list_iter_end
+  drm_connector_list_iter_next
+  drm_connector_list_iter_begin
+  drm_dp_link_train_channel_eq_delay
+  drm_dp_link_train_clock_recovery_delay
+  drm_dp_get_adjust_request_pre_emphasis
+  drm_dp_get_adjust_request_voltage
+  drm_dp_clock_recovery_ok
+  drm_dp_channel_eq_ok
+  drm_dp_dpcd_read_link_status
+  drm_mode_is_420_only
+  drm_detect_monitor_audio
+  drm_dp_dpcd_read
+  drm_dp_link_rate_to_bw_code
+  drm_dp_bw_code_to_link_rate
+  drm_dp_dpcd_write
+  drm_dp_aux_unregister
+  drm_dp_aux_register
+  __drm_debug
+  __drm_dbg
+
+
+# required by wcd937x_dlkm.ko
+  snd_soc_component_write
+  regcache_sync
+  regcache_mark_dirty
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_component_init_regmap
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_info_enum_double
+  snd_info_create_card_entry
+  snd_info_free_entry
+  snd_info_register
+  snd_info_create_module_entry
+  snd_soc_component_update_bits
+  snd_soc_component_read
+
+# required by fs15xx_dlkm.ko
+  snd_soc_add_card_controls
+
+# required by fs19xx_dlkm.ko
+  snd_pcm_format_physical_width
+  snd_pcm_hw_constraint_list
+  snd_pcm_hw_constraint_mask64
+
+# required by tas256x_dlkm.ko
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  devm_snd_soc_register_component
+
+# required by aw882xx_dlkm.ko
+  class_remove_file_ns
+  class_create_file_ns
+  snd_soc_info_enum_double
+
+# required by cs35lxx_dlkm.ko
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_put_volsw_range
+  snd_soc_get_volsw_range
+  snd_soc_info_volsw_range
+  snd_ctl_boolean_mono_info
+  snd_soc_put_enum_double
+  snd_soc_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_put_volsw_sx
+  snd_soc_get_volsw_sx
+  snd_soc_info_volsw_sx
+  snd_pcm_hw_constraint_list
+  devm_snd_soc_register_component
+  regmap_register_patch
+  regulator_bulk_enable
+
+# required by cs35lxxa_dlkm.ko
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_put_volsw_range
+  snd_soc_get_volsw_range
+  snd_soc_info_volsw_range
+  snd_soc_put_enum_double
+  snd_soc_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_put_volsw_sx
+  snd_soc_get_volsw_sx
+  snd_soc_info_volsw_sx
+  snd_pcm_hw_constraint_list
+  regmap_register_patch
+  regulator_bulk_enable
+
+# required by tfa98xx_dlkm.ko
+  device_remove_bin_file
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  snd_soc_component_init_regmap
+  snd_pcm_hw_constraint_list
+  snd_pcm_hw_constraint_mask64
+  device_create_bin_file
+  devm_snd_soc_register_component
+
+# required by wcd938x_dlkm.ko
+  snd_soc_component_write
+  regcache_sync
+  regcache_mark_dirty
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_component_init_regmap
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_info_enum_double
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_info_create_card_entry
+  snd_info_free_entry
+  snd_info_register
+  snd_info_create_module_entry
+  snd_soc_component_update_bits
+  snd_soc_component_read
+
+# required by wsa883x_dlkm.ko
+  regcache_sync
+  regcache_mark_dirty
+  snd_soc_component_exit_regmap
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_component_init_regmap
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_info_enum_double
+  snd_soc_component_update_bits
+  snd_soc_component_read
+  snd_soc_lookup_component
+  snd_info_create_card_entry
+  snd_info_free_entry
+  snd_info_register
+  snd_info_create_module_entry
+
+# required by lpass_cdc_rx_macro_dlkm.ko
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_component_write
+  snd_soc_component_read
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_dapm_mux_update_power
+  snd_soc_dapm_kcontrol_widget
+  snd_soc_info_enum_double
+  snd_soc_component_update_bits
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_widgets
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  regcache_sync_region
+  regcache_mark_dirty
+  platform_device_add_data
+
+# required by lpass_cdc_tx_macro_dlkm.ko
+  snd_soc_put_enum_double
+  snd_soc_get_enum_double
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  regcache_sync_region
+  regcache_mark_dirty
+  snd_soc_component_write
+  snd_soc_component_read
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_dapm_mixer_update_power
+  snd_soc_dapm_kcontrol_widget
+  snd_soc_component_update_bits
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_widgets
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+
+# required by lpass_cdc_va_macro_dlkm.ko
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_component_write
+  snd_soc_component_read
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_dapm_mixer_update_power
+  snd_soc_dapm_kcontrol_widget
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_widgets
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  snd_soc_component_update_bits
+  regcache_sync_region
+  regcache_mark_dirty
+  platform_device_add_data
+
+# required by lpass_cdc_wsa_macro_dlkm.ko
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_component_write
+  snd_soc_dapm_mux_update_power
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_component_read
+  snd_soc_dapm_mixer_update_power
+  snd_soc_dapm_kcontrol_widget
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_widgets
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  regcache_sync_region
+  regcache_mark_dirty
+  snd_soc_component_update_bits
+  platform_device_add_data
+
+# required by lpass_cdc_wsa2_macro_dlkm.ko
+  snd_soc_put_volsw
+  snd_soc_get_volsw
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_component_write
+  snd_soc_dapm_mux_update_power
+  snd_soc_dapm_put_enum_double
+  snd_soc_dapm_get_enum_double
+  snd_soc_info_enum_double
+  snd_soc_component_read
+  snd_soc_dapm_mixer_update_power
+  snd_soc_dapm_kcontrol_widget
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_widgets
+  snd_soc_dapm_add_routes
+  snd_soc_dapm_new_controls
+  regcache_sync_region
+  regcache_mark_dirty
+  snd_soc_component_update_bits
+  platform_device_add_data
+
+# required by lpass_cdc_dlkm.ko
+  snd_soc_component_write
+  regcache_sync
+  regcache_mark_dirty
+  regcache_cache_only
+  snd_soc_component_read
+  snd_soc_component_init_regmap
+  snd_info_create_card_entry
+  snd_info_free_entry
+  snd_info_register
+  snd_info_create_module_entry
+  snd_soc_component_update_bits
+
+# required by swr_haptics_dlkm.ko
+  snd_soc_dapm_ignore_suspend
+  snd_soc_component_init_regmap
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+
+# required by hdmi_dlkm.ko
+  snd_soc_info_multi_ext
+  snd_soc_info_enum_double
+
+# required by mbhc_dlkm.ko
+  snd_jack_set_key
+  snd_soc_card_jack_new
+  snd_soc_component_read
+  snd_soc_component_update_bits
+  snd_soc_jack_report
+
+# required by swr_dmic_dlkm.ko
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_put_volsw
+  snd_soc_dapm_get_volsw
+  snd_soc_info_enum_double
+  snd_soc_lookup_component
+
+# required by wcd9xxx_dlkm.ko
+  snd_soc_component_update_bits
+
+# required by wcd_core_dlkm.ko
+  irq_create_mapping_affinity
+  regmap_irq_get_virq
+  devm_regmap_del_irq_chip
+  devm_regmap_add_irq_chip
+  snd_soc_dapm_sync
+  snd_soc_dapm_disable_pin
+  snd_soc_dapm_force_enable_pin
+  snd_soc_lookup_component
+
+# required by machine_dlkm.ko
+  snd_soc_pm_ops
+  snd_soc_unregister_card
+  snd_soc_of_parse_card_name
+  snd_soc_get_pcm_runtime
+  snd_soc_dai_set_channel_map
+  snd_info_free_entry
+  snd_info_register
+  snd_info_create_module_entry
+  snd_soc_dapm_sync
+  snd_soc_dapm_ignore_suspend
+  snd_soc_dapm_new_controls
+  devm_snd_soc_register_card
+  snd_soc_of_parse_audio_routing
+  snd_soc_info_enum_double
+  snd_soc_rtdcom_lookup
+  snd_soc_card_get_kcontrol
+  snd_soc_dai_get_channel_map
+
+# required by swr_ctrl_dlkm.ko
+  pm_runtime_autosuspend_expiration
+
+# required by swr_dlkm.ko
+  pm_generic_resume
+  pm_generic_suspend
+  of_modalias_node
+
+# required by gpr_dlkm.ko
+  of_device_uevent_modalias
+
+# required by ipam.ko
+  vmemdup_user
+  netif_device_attach
+  netif_device_detach
+  ns_capable
+  vsim_notify_tether_stats
+  remove_wait_queue
+  wait_woken
+  woken_wake_function
+  dma_mmap_attrs
+  kstrtos8_from_user
+
+# required by rndisipam.ko
+  alloc_etherdev_mqs
+
+# required by gsim.ko
+  kstrtos8_from_user
+  kstrtoint_from_user
+  platform_msi_domain_alloc_irqs
+  platform_msi_domain_free_irqs
+
+# required by qca6490.ko
+  pci_disable_msi
+
+# required by kiwi.ko
+  pci_disable_msi
+

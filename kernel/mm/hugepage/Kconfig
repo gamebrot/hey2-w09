@@ -1,0 +1,45 @@
+# SPDX-License-Identifier: GPL-2.0
+
+# Selected when system need hugepage
+config HUGEPAGE_POOL
+	bool "hugepage pool management"
+	default n
+	depends on TRANSPARENT_HUGEPAGE
+	help
+	  Enable this to provide 2MB hugepage pool
+	  allocation requests efficiently.
+
+config HUGEPAGE_POOL_DEBUG
+	bool "hugepage pool debug"
+	default n
+	depends on HUGEPAGE_POOL
+	help
+	  Show hugepage pool debug logs in kernel log.
+
+config HUGEPAGE_DMA_BUF
+	bool "hugepage for DMA-buf"
+	default n
+	depends on HUGEPAGE_POOL && DMA_SHARED_BUFFER
+	help
+	  Enable this to provide 2MB hugepage to THP DMA_buf
+
+config HUGEPAGE_DMA_BUF_DEBUG
+	bool "hugepage for DMA-buf debug"
+	default n
+	depends on HUGEPAGE_DMA_BUF
+	help
+	  Enable this to provide 2MB hugepage to THP DMA_buf debug
+
+config HUGEPAGE_VMALLOC
+	bool "hugepage for vmalloc"
+	default n
+	depends on HAVE_ARCH_HUGE_VMALLOC && HUGEPAGE_POOL
+	help
+	  Enable this to provide 2MB hugepage to THP vmalloc
+
+config HUGEPAGE_VMALLOC_DEBUG
+	bool "hugepage for vmalloc debug"
+	default n
+	depends on HUGEPAGE_VMALLOC
+	help
+	  Enable this to provide 2MB hugepage to THP vmalloc debug

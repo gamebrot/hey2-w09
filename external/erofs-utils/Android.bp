@@ -1,0 +1,208 @@
+common_src_files = [
+    "lib/cache.c",
+    "lib/compress.c",
+    "lib/xattr.c",
+    "lib/compressor.c",
+    "lib/compressor_lz4hc.c",
+    "lib/io.c",
+    "lib/inode.c",
+    "lib/config.c",
+    "lib/compressor_lz4.c",
+    "lib/map.c",
+]
+
+
+cc_binary_host {
+    name: "mkfs.erofs",
+    srcs: common_src_files + ["mkfs/main.c"],
+
+    shared_libs: ["libcutils"],
+    static_libs: [
+        "libext4_utils",
+        "libsparse",
+        "libz",
+        "liblz4",
+    ],
+
+    local_include_dirs: [
+        "include",
+        "include/erofs",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wsign-compare",
+        "-fomit-frame-pointer",
+        "-DEROFS_SUPPORT_COMPR_MODE_3",
+        "-DLZ4_ENABLED=1",
+        "-DLZ4HC_ENABLED=1",
+        "-D_FILE_OFFSET_BITS=64",
+    ],
+
+    target: {
+        linux: {
+            cflags: [ "-DHOST"],
+            shared_libs: ["libselinux"],
+        },
+        darwin: {
+            cflags: [ "-DHOST"],
+            shared_libs: ["libselinux"],
+        },
+        windows: {
+            host_ldlibs: ["-lws2_32"],
+        },
+    },
+}
+
+cc_binary_host {
+    name: "make_erofs_android",
+    srcs: common_src_files + ["mkfs/main.c"],
+
+    static_libs: [
+        "libcutils",
+        "libext4_utils",
+        "libsparse",
+        "libz",
+        "liblz4",
+        "libselinux",
+    ],
+
+    local_include_dirs: [
+        "include",
+        "include/erofs",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wsign-compare",
+        "-fomit-frame-pointer",
+        "-DEROFS_SUPPORT_COMPR_MODE_3",
+        "-DCONFIG_EROFS_READ_XATTR_FROM_DIR",
+        "-DLZ4_ENABLED=1",
+        "-DLZ4HC_ENABLED=1",
+        "-D_FILE_OFFSET_BITS=64",
+    ],
+
+    target: {
+        linux: {
+            cflags: ["-DHOST"],
+        },
+        darwin: {
+            cflags: ["-DHOST"],
+        },
+        windows: {
+            host_ldlibs: ["-lws2_32"],
+        },
+    },
+    static_executable: true,
+    ldflags: ["-static"],
+}
+
+cc_binary_host {
+    name: "make_erofs_patch",
+    srcs: common_src_files + ["mkfs/main.c", "lib/patch.c"],
+
+    shared_libs: ["libcutils"],
+    static_libs: [
+        "libext4_utils",
+        "libsparse",
+        "libz",
+        "liblz4",
+    ],
+
+    local_include_dirs: [
+        "include",
+        "include/erofs",
+    ],
+
+    cflags: [
+        "-Wall",
+        "-Werror",
+        "-Wsign-compare",
+        "-fomit-frame-pointer",
+        "-DEROFS_SUPPORT_COMPR_MODE_3",
+        "-DLZ4_ENABLED=1",
+        "-DLZ4HC_ENABLED=1",
+        "-DPATCH_ENABLED=1",
+        "-D_FILE_OFFSET_BITS=64",
+    ],
+
+    target: {
+        linux: {
+            enabled: true,
+            cflags: [ "-DHOST"],
+            shared_libs: ["libselinux"],
+        },
+        darwin: {
+            enabled: false,
+            cflags: [ "-DHOST"],
+            shared_libs: ["libselinux"],
+        },
+        windows: {
+            enabled: false,
+            host_ldlibs: [
+                "-lws2_32",
+            ],
+        },
+    },
+}
+/*
+cc_binary {
+    name: "erofs_diff_compress",
+    clang: true,
+    srcs: common_src_files + ["diff/erofs_diff_main.cpp"],
+
+    include_dirs: [
+        "vendor/honor/system/base/bootable/recovery/update_common/dload/huawei_update_binary",
+        "vendor/honor/system/base/bootable/recovery/update_common/recovery_comm_lib",
+        "system/libbase/include",
+    ],
+    local_include_dirs: ["include"],
+
+    cflags: [
+        "-Wall",
+        "-Wsign-compare",
+        "-O1",
+        "-fomit-frame-pointer",
+        "-DEROFS_SUPPORT_COMPR_MODE_3",
+        "-DCONFIG_EROFS_READ_XATTR_FROM_DIR",
+        "-DLZ4_ENABLED=1",
+        "-DLZ4HC_ENABLED=1",
+        "-DPATCH_ENABLED=1",
+    ],
+
+    static_libs: [
+        "lib_rssrange",
+        "lib_hwotafault",
+        "lib_volumn_utils",
+        "libc_secstatic",
+        "libcrypto_static",
+        "liblog",
+        "libcutils",
+        "libext4_utils",
+        "libfec",
+        "libselinux",
+        "libsparse",
+        "liblz4",
+        "libbase",
+    ],
+    static_executable: true,
+}
+*/
+sh_binary_host {
+    name: "mkerofsimage.sh",
+    src: "mkerofsimage.sh",
+    required: [
+        "img2simg",
+        "mkfs.erofs",
+    ],
+
+    target: {
+        darwin: {
+            enabled: false,
+        },
+    },
+}
+

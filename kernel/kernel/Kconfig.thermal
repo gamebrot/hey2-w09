@@ -1,0 +1,6 @@
+# SPDX-License-Identifier: GPL-2.0-only
+config HONOR_THERMAL
+	bool "Honor thermal Part"
+	default n
+	help
+	  Control Honor thermal to insert code in kernel
