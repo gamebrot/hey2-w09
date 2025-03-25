@@ -29,4 +29,4 @@ The **Honor Pad 9** is a powerful Android tablet released by **Honor** in Q4 202
  
 ## 🖼️ Device Picture
 
-![Honor Pad 9](https://raw.githubusercontent.com/gamebrot/hey2-w09/main/images/honor-pad9.jpg)
+![Honor Pad 9](https://raw.githubusercontent.com/gamebrot/hey2-w09/main/honor-pad9.png)
