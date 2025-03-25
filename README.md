@@ -1,14 +1,14 @@
 # Honor Pad 9 Device Tree
 
-The Honor Pad 9 (Models or Codename: HEY2-W09)   
+The Honor Pad 9 (Models or Codename: HEY2-W09)
+Also known as Honor Tablet 9   
 Versions: Wi-Fi - 5G/LTE   
-Also known as Honor Tablet 9
 
 ## 📌 Device Overview  
 
 The **Honor Pad 9** is a powerful Android tablet released by **Honor** in Q4 2023. It features a large 12.1" display, Snapdragon 6 Gen 1 processor, and a high-capacity 8300 mAh battery for long-lasting performance.
 
-## 📱 Specifications  
+## 📱 Device Specifications  
 
 | Feature      | Details |
 |--------------|---------|
